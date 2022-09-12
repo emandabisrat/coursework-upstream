@@ -1,1 +1,2 @@
-# coursework-upstream
+Temporary README for the upstream repo.
+
