@@ -11,10 +11,10 @@ Online resources consulted:
    Complete this section   
 """
 
-def add():
+def add2():
    # Replace None with 2 + 2 in the next line.
     return None
 
 if __name__ == "__main__":
-    print("2 + 2 is", add())
+    print("2 + 2 is", add2())
     
