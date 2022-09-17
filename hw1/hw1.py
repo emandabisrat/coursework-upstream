@@ -2,13 +2,15 @@
 CMSC 14100, Autumn 2022
 Homework #1
 
-Your Name Goes Here
+YOUR NAME GOES HERE
 
 People Consulted:
-   Complete this section
+   For future assignments, you will be expected to list anyone (other than the
+   course staff that you consulted about this assignment).
 
 Online resources consulted:
-   Complete this section   
+   For furture assignments, you will be expected to list the URL of
+   any online resources that you use to complete this assignment.
 """
 
 def add2():
