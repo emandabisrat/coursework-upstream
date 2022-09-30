@@ -2,7 +2,8 @@
 CMSC 14100, Autumn 2022
 Homework #2
 
-We will be using anonymous grading, so please do NOT include your name in this file
+We will be using anonymous grading, so please do NOT include your name
+in this file
 
 People Consulted:
    List anyone (other than the course staff) that you consulted about
