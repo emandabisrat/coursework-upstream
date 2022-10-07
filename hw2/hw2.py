@@ -233,7 +233,7 @@ def compute_fee(length, weight):
     # Add code to set fee to an appropriate value here.
     if weight > 30000 or length == 40:
         fee = 300
-    elif weight < 30000 and length == 20:
+    elif length == 20:
         fee = 150
     else:
         fee = 75
