@@ -106,7 +106,8 @@ def is_urban_county(population, area):
 
     ### EXERCISE 4 -- YOUR CODE GOES HERE
     # Replace "None" with the correct expression
-    result = population >= URBAN_POPULATION_THRESHOLD and area >= URBAN_POPULATION_THRESHOLD/URBAN_DENSITY_THRESHOLD
+    density= population/area
+    result = population >= URBAN_POPULATION_THRESHOLD and density >= URBAN_DENSITY_THRESHOLD
 
     ### DO NOT MODIFY THE FOLLOWING LINE!
     return result
@@ -137,12 +138,14 @@ def is_other_county(population, area):
 
     ### EXERCISE 5 -- YOUR CODE GOES HERE
     # Add code to set result to the correct value here.
-    if result == population <= RURAL_POPULATION_THRESHOLD:
-        print("The county does not qualify as rural or urban")
-    elif result == population >= URBAN_POPULATION_THRESHOLD:
-        print("The county does not qualify as rural or urban")
+    density = population / area
+
+    if population <= RURAL_POPULATION_THRESHOLD and density <= RURAL_DENSITY_THRESHOLD:
+        result = False
+    elif population >= URBAN_POPULATION_THRESHOLD and density >= URBAN_DENSITY_THRESHOLD:
+        result = False
     else:
-        print("County qualifies as either rural or uban")
+        result = True
     ### DO NOT MODIFY THE FOLLOWING LINE!
     return result
 
@@ -199,14 +202,13 @@ def label_county(population, area):
     ### EXERCISE 7 -- YOUR CODE GOES HERE
     # Add code to set result to "rural", "urban", or "other"
     # as appropriate
-    urban_area = URBAN_POPULATION_THRESHOLD/URBAN_DENSITY_THRESHOLD
-    rural_area = RURAL_POPULATION_THRESHOLD/RURAL_DENSITY_THRESHOLD
-    if population >= URBAN_POPULATION_THRESHOLD and area >= urban_area:
-        result = print("This county is an urban area.")
-    elif population <= RURAL_POPULATION_THRESHOLD and area <= rural_area:
-        result = print("This county is a rural area.")
+    density = population / area
+    if population >= URBAN_POPULATION_THRESHOLD and density >= URBAN_DENSITY_THRESHOLD:
+        result = "urban"
+    elif population <= RURAL_POPULATION_THRESHOLD and density <= RURAL_DENSITY_THRESHOLD:
+        result = "rural"
     else:
-        result = print("This county is netiher urban or rural.")
+        result = "other"
 
     ### DO NOT MODIFY THE FOLLOWING LINE!
     return result
