@@ -37,7 +37,7 @@ def compare_sum(lst1, lst2):
     ### EXERCISE 1 -- YOUR CODE TO COMPUTE result GOES HERE
     result = None
 
-    # Replace None with an appropriate return value
+    ### DO NOT REMOVE THE return STATEMENT BELOW
     return result
 
 
@@ -64,7 +64,7 @@ def largest_of_three(lst, idx):
     ### EXERCISE 2 -- YOUR CODE TO COMPUTE result GOES HERE
     result = None
 
-    # Replace None with an appropriate return value
+    ### DO NOT REMOVE THE return STATEMENT BELOW
     return result
 
 
@@ -86,7 +86,7 @@ def seq(n):
     ### EXERCISE 3 -- YOUR CODE TO COMPUTE result GOES HERE
     result = None
 
-    # Replace None with an appropriate return value
+    ### DO NOT REMOVE THE return STATEMENT BELOW
     return result
 
 
@@ -106,7 +106,7 @@ def gen_swap(lst, a, b):
     ### EXERCISE 4 -- YOUR CODE TO COMPUTE result GOES HERE
     result = None
 
-    # Replace None with an appropriate return value
+    ### DO NOT REMOVE THE return STATEMENT BELOW
     return result
 
 
@@ -139,7 +139,7 @@ def how_many_equal_first(lst):
     ### EXERCISE 5 -- YOUR CODE TO COMPUTE result GOES HERE
     result = None
 
-    ### DO NOT REMOVE THE NEXT LINE
+    ### DO NOT REMOVE THE return STATEMENT BELOW 
     return result
 
 
@@ -167,5 +167,5 @@ def intercalate_lists(lst1, lst2):
     ### EXERCISE 6 -- YOUR CODE TO COMPUTE result GOES HERE
     result = None
 
-    # Replace None with an appropriate return value
+    ### DO NOT REMOVE THE return STATEMENT BELOW
     return result
