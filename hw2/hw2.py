@@ -174,8 +174,8 @@ def alt_is_other_county(population, area):
 
     ### EXERCISE 6 -- YOUR CODE GOES HERE
     # Replace "None" with an appropriate expression.
-
-    result = population > RURAL_POPULATION_THRESHOLD and population < URBAN_POPULATION_THRESHOLD
+    density = population / area
+    result = (population > RURAL_POPULATION_THRESHOLD or density > RURAL_DENSITY_THRESHOLD) and (population < URBAN_POPULATION_THRESHOLD or density < URBAN_DENSITY_THRESHOLD)
 
     ### DO NOT MODIFY THE FOLLOWING LINE!
     return result
