@@ -68,12 +68,12 @@ def find_interest_rate(amount, principal, time):
     ### EXERCISE 3 -- YOUR CODE GOES HERE
     # You may define local variables here for use in
     # the result expression.
-    a = amount
-    p = principal
+    amt = amount
+    pri = principal
     t = time
-    simple_interest = a - p
+    simple_interest = amt - pri
     # Replace "None" with an appropriate expression
-    result = (simple_interest * 100) / (p * t)
+    result = (simple_interest * 100) / (pri * t)
 
     ### DO NOT MODIFY THE FOLLOWING LINE!
     return result
