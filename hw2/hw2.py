@@ -20,7 +20,7 @@ def add_one_and_multiply(a, x):
 
     ### EXERCISE 1 -- YOUR CODE GOES HERE
     # Replace "None" with the correct expression
-    result = None
+    result = (a + 1) * x
 
     ### DO NOT MODIFY THE FOLLOWING LINE!
     return result
@@ -40,7 +40,7 @@ def are_congruent_mod_n(a, b, n):
 
     ### EXERCISE 2 -- YOUR CODE GOES HERE
     # Replace "None" with the correct expression
-    result = None
+    result = a % n == b % n
 
     ### DO NOT MODIFY THE FOLLOWING LINE!
     return result
@@ -68,9 +68,12 @@ def find_interest_rate(amount, principal, time):
     ### EXERCISE 3 -- YOUR CODE GOES HERE
     # You may define local variables here for use in
     # the result expression.
-
+    a = amount
+    p = principal
+    t = time
+    simple_interest = a - p
     # Replace "None" with an appropriate expression
-    result = None
+    result = (simple_interest * 100) / (p * t)
 
     ### DO NOT MODIFY THE FOLLOWING LINE!
     return result
@@ -103,7 +106,7 @@ def is_urban_county(population, area):
 
     ### EXERCISE 4 -- YOUR CODE GOES HERE
     # Replace "None" with the correct expression
-    result = None
+    result = population >= URBAN_POPULATION_THRESHOLD and area >= URBAN_POPULATION_THRESHOLD/URBAN_DENSITY_THRESHOLD
 
     ### DO NOT MODIFY THE FOLLOWING LINE!
     return result
@@ -134,7 +137,12 @@ def is_other_county(population, area):
 
     ### EXERCISE 5 -- YOUR CODE GOES HERE
     # Add code to set result to the correct value here.
-
+    if result == population <= RURAL_POPULATION_THRESHOLD:
+        print("The county does not qualify as rural or urban")
+    elif result == population >= URBAN_POPULATION_THRESHOLD:
+        print("The county does not qualify as rural or urban")
+    else:
+        print("County qualifies as either rural or uban")
     ### DO NOT MODIFY THE FOLLOWING LINE!
     return result
 
@@ -164,7 +172,7 @@ def alt_is_other_county(population, area):
     ### EXERCISE 6 -- YOUR CODE GOES HERE
     # Replace "None" with an appropriate expression.
 
-    result = None
+    result = population > RURAL_POPULATION_THRESHOLD and population < URBAN_POPULATION_THRESHOLD
 
     ### DO NOT MODIFY THE FOLLOWING LINE!
     return result
@@ -191,6 +199,14 @@ def label_county(population, area):
     ### EXERCISE 7 -- YOUR CODE GOES HERE
     # Add code to set result to "rural", "urban", or "other"
     # as appropriate
+    urban_area = URBAN_POPULATION_THRESHOLD/URBAN_DENSITY_THRESHOLD
+    rural_area = RURAL_POPULATION_THRESHOLD/RURAL_DENSITY_THRESHOLD
+    if population >= URBAN_POPULATION_THRESHOLD and area >= urban_area:
+        result = print("This county is an urban area.")
+    elif population <= RURAL_POPULATION_THRESHOLD and area <= rural_area:
+        result = print("This county is a rural area.")
+    else:
+        result = print("This county is netiher urban or rural.")
 
     ### DO NOT MODIFY THE FOLLOWING LINE!
     return result
@@ -213,6 +229,11 @@ def compute_fee(length, weight):
 
     ### EXERCISE 8 -- YOUR CODE GOES HERE
     # Add code to set fee to an appropriate value here.
-
+    if weight > 30000 or length == 40:
+        fee = 300
+    elif weight < 30000 and length == 20:
+        fee = 150
+    else:
+        fee = 75
     ### DO NOT MODIFY THE FOLLOWING LINE!
     return fee
