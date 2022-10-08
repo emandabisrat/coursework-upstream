@@ -139,7 +139,7 @@ def how_many_equal_first(lst):
     ### EXERCISE 5 -- YOUR CODE TO COMPUTE result GOES HERE
     result = None
 
-    ### DO NOT REMOVE THE return STATEMENT BELOW 
+    ### DO NOT REMOVE THE return STATEMENT BELOW
     return result
 
 
