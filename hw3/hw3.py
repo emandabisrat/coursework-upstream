@@ -36,12 +36,12 @@ def compare_sum(lst1, lst2):
     """
     ### EXERCISE 1 -- YOUR CODE TO COMPUTE result GOES HERE
     
-    if sum(lst1) > sum(lst2):
-        result = sum(lst1) - sum(lst2)
-    elif sum(lst1) == sum(lst2):
-        result = 0
-    else:
-        result = sum(lst2) - sum(lst1)
+    #if sum(lst1) > sum(lst2):
+    result = sum(lst1) - sum(lst2)
+    #elif sum(lst1) == sum(lst2):
+        #result = 0
+    #else:
+        #result = sum(lst2) - sum(lst1)
     
 
 
@@ -78,7 +78,7 @@ def largest_of_three(lst, idx):
         if idx == 0:
             result = max(lst[idx], lst[idx + 1], lst[(len(lst))- 1])
         elif idx == (len(lst) - 1):
-            result = max((lst[idx]), lst[idx - 1], lst[0])
+            result = max((lst[len(lst) - 1]), lst[idx - 1], lst[0])
         else:
             result = max(lst[idx], lst[idx + 1], lst[idx-1])
 
