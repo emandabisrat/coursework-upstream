@@ -70,9 +70,20 @@ def largest_of_three(lst, idx):
     assert len(lst) > idx >= 0
 
     ### EXERCISE 2 -- YOUR CODE TO COMPUTE result GOES HERE
-    result = None
-    for i in lst:
+    #for i in lst:
+        #result = max(lst[idx], lst[idx + 1], lst[idx-1])
+
+    if idx == 0:
+        result = max(lst[0], lst[1], lst[idx(len(lst))])
+    elif idx == len(lst):
+        result = max(idx[len(lst)], idx[len(lst)-1], idx[0])
+    else:
         result = max(lst[idx], lst[idx + 1], lst[idx-1])
+
+
+
+    
+
 
  
     ### DO NOT REMOVE THE return STATEMENT BELOW
