@@ -71,7 +71,9 @@ def largest_of_three(lst, idx):
 
     ### EXERCISE 2 -- YOUR CODE TO COMPUTE result GOES HERE
     result = None
-
+    for i in lst:
+        if lst[idx]  lst[idx + 1] 
+            
     ### DO NOT REMOVE THE return STATEMENT BELOW
     return result
 
