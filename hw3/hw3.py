@@ -72,20 +72,17 @@ def largest_of_three(lst, idx):
     ### EXERCISE 2 -- YOUR CODE TO COMPUTE result GOES HERE
     #for i in lst:
         #result = max(lst[idx], lst[idx + 1], lst[idx-1])
-
-    #if idx == 0:
-        #result = max(lst[idx], lst[idx + 1], lst[idx(len(lst))- 1])
-    #elif idx == (len(lst) - 1):
-        #result = max((lst[idx]), lst[idx - 1], lst[0])
-    #else:
-        #result = max(lst[idx], lst[idx + 1], lst[idx-1])
     
-    if idx == 0:
-        result = max(lst[idx], lst[idx + 1], lst[idx(len(lst))- 1])
-    elif idx == (len(lst) - 1):
-        result = max((lst[idx(len(lst)-1)]), lst[idx - 1], lst[0])
-    else:
-        result = max(lst[idx], lst[idx + 1], lst[idx-1])
+    
+    for i in lst:
+        if idx == 0:
+            result = max(lst[idx], lst[idx + 1], lst[idx(len(lst))- 1])
+        elif idx == (len(lst) - 1):
+            result = max((lst[idx]), lst[idx - 1], lst[0])
+        else:
+            result = max(lst[idx], lst[idx + 1], lst[idx-1])
+
+
 
  
     ### DO NOT REMOVE THE return STATEMENT BELOW
