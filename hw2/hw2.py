@@ -20,7 +20,7 @@ def add_one_and_multiply(a, x):
 
     ### EXERCISE 1 -- YOUR CODE GOES HERE
     # Replace "None" with the correct expression
-    result = None
+    result = (a + 1) * x
 
     ### DO NOT MODIFY THE FOLLOWING LINE!
     return result
@@ -40,7 +40,7 @@ def are_congruent_mod_n(a, b, n):
 
     ### EXERCISE 2 -- YOUR CODE GOES HERE
     # Replace "None" with the correct expression
-    result = None
+    result = a % n == b % n
 
     ### DO NOT MODIFY THE FOLLOWING LINE!
     return result
@@ -68,9 +68,12 @@ def find_interest_rate(amount, principal, time):
     ### EXERCISE 3 -- YOUR CODE GOES HERE
     # You may define local variables here for use in
     # the result expression.
-
+    amt = amount
+    pri = principal
+    t = time
+    simple_interest = amt - pri
     # Replace "None" with an appropriate expression
-    result = None
+    result = (simple_interest * 100) / (pri * t)
 
     ### DO NOT MODIFY THE FOLLOWING LINE!
     return result
@@ -103,7 +106,8 @@ def is_urban_county(population, area):
 
     ### EXERCISE 4 -- YOUR CODE GOES HERE
     # Replace "None" with the correct expression
-    result = None
+    density= population/area
+    result = population >= URBAN_POPULATION_THRESHOLD and density >= URBAN_DENSITY_THRESHOLD
 
     ### DO NOT MODIFY THE FOLLOWING LINE!
     return result
@@ -134,7 +138,14 @@ def is_other_county(population, area):
 
     ### EXERCISE 5 -- YOUR CODE GOES HERE
     # Add code to set result to the correct value here.
+    density = population / area
 
+    if population <= RURAL_POPULATION_THRESHOLD and density <= RURAL_DENSITY_THRESHOLD:
+        result = False
+    elif population >= URBAN_POPULATION_THRESHOLD and density >= URBAN_DENSITY_THRESHOLD:
+        result = False
+    else:
+        result = True
     ### DO NOT MODIFY THE FOLLOWING LINE!
     return result
 
@@ -163,8 +174,8 @@ def alt_is_other_county(population, area):
 
     ### EXERCISE 6 -- YOUR CODE GOES HERE
     # Replace "None" with an appropriate expression.
-
-    result = None
+    density = population / area
+    result = (population > RURAL_POPULATION_THRESHOLD or density > RURAL_DENSITY_THRESHOLD) and (population < URBAN_POPULATION_THRESHOLD or density < URBAN_DENSITY_THRESHOLD)
 
     ### DO NOT MODIFY THE FOLLOWING LINE!
     return result
@@ -191,6 +202,13 @@ def label_county(population, area):
     ### EXERCISE 7 -- YOUR CODE GOES HERE
     # Add code to set result to "rural", "urban", or "other"
     # as appropriate
+    density = population / area
+    if population >= URBAN_POPULATION_THRESHOLD and density >= URBAN_DENSITY_THRESHOLD:
+        result = "urban"
+    elif population <= RURAL_POPULATION_THRESHOLD and density <= RURAL_DENSITY_THRESHOLD:
+        result = "rural"
+    else:
+        result = "other"
 
     ### DO NOT MODIFY THE FOLLOWING LINE!
     return result
@@ -213,6 +231,11 @@ def compute_fee(length, weight):
 
     ### EXERCISE 8 -- YOUR CODE GOES HERE
     # Add code to set fee to an appropriate value here.
-
+    if weight > 30000 or length == 40:
+        fee = 300
+    elif length == 20:
+        fee = 150
+    else:
+        fee = 75
     ### DO NOT MODIFY THE FOLLOWING LINE!
     return fee
