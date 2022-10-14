@@ -1,0 +1,9 @@
+CMSC 14100, Autumn 2022
+Homework #3
+
+hw3.py: You will do your work in this Python file
+
+test_hw3.py: Test code for HW #3.  Do NOT modify this file
+test_helpers.py: Helper functions for the test code.  Do NOT modify this file.
+
+README.md: this file
