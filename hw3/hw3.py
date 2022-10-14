@@ -74,9 +74,9 @@ def largest_of_three(lst, idx):
         #result = max(lst[idx], lst[idx + 1], lst[idx-1])
 
     if idx == 0:
-        result = max(lst[0], lst[1], lst[idx(len(lst))])
-    elif idx == len(lst):
-        result = max(idx[len(lst)], idx[len(lst)-1], idx[0])
+        result = max(lst[idx], lst[idx + 1], lst[idx(len(lst))- 1])
+    elif idx == (len(lst) - 1):
+        result = max((lst[idx]), lst[idx - 1], lst[0])
     else:
         result = max(lst[idx], lst[idx + 1], lst[idx-1])
 
