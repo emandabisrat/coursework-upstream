@@ -35,13 +35,13 @@ def compare_sum(lst1, lst2):
         n < 0 if lst1 < lst2
     """
     ### EXERCISE 1 -- YOUR CODE TO COMPUTE result GOES HERE
-    result = None
+    
     if sum(lst1) > sum(lst2):
-        return sum(lst1) - sum(lst2)
+        result = sum(lst1) - sum(lst2)
     elif sum(lst1) == sum(lst2):
-        return 0
+        result = 0
     elif sum(lst1) < sum(lst2):
-        return sum(lst2) - sum(lst1)
+        result = sum(lst2) - sum(lst1)
     
 
 
@@ -112,7 +112,7 @@ def gen_swap(lst, a, b):
     Returns: a new list of values
     """
     ### EXERCISE 4 -- YOUR CODE TO COMPUTE result GOES HERE
-    result = None
+    
     result = []
     for i in lst:
         if i == a:
