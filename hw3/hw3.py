@@ -40,7 +40,7 @@ def compare_sum(lst1, lst2):
         result = sum(lst1) - sum(lst2)
     elif sum(lst1) == sum(lst2):
         result = 0
-    elif sum(lst1) < sum(lst2):
+    else:
         result = sum(lst2) - sum(lst1)
     
 
