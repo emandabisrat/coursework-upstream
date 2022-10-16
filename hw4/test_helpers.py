@@ -12,7 +12,9 @@ def gen_recreate_msg(module, function, *params):
     Generate a message to explain how to recreate a test
     in ipython.
     """
-    params_str = ", ".join([str(p) for p in params])
+    params = [str(p) if not isinstance(p, str) else f"'{p}'" for p in params]
+
+    params_str = ", ".join(params)
 
     recreate_msg = "To recreate this test in ipython3 run:\n"
     recreate_msg += "  {}.{}({})".format(module, function, params_str)
