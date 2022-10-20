@@ -62,15 +62,13 @@ def suffix_distance(u, v):
     ### Replace the body of this function with your solution.
     sum = 0
     for i in range(len(u)):
-        if u[:-i] == v[:-i]:
-            sum = Subnormal + 1
+        if u[-i] == v[-i]:
+            sum = sum + 1
             
         else:
             break
 
-    ustring = len(u) - sum
-    vstring = len(v) - sum   
-    total = ustring + vstring
+    total = (len(u) - sum) + (len(v) - sum)
     return total
 
 # Exercise 3
