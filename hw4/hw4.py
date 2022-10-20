@@ -44,9 +44,11 @@ def prefix_distance(u, v):
     for i in range(len(u)):
         if u[i] == v[i]:
             dist = dist + 1
+            total = (len(u) - dist) + (len(v) - dist)
+            return total
         else:
-            m = m + 1
-    return m
+            break
+
 
     #total = (len(u) - dist) + (len(v) - dist)
     #ustring = len(u) - dist
