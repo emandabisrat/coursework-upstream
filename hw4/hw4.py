@@ -34,13 +34,20 @@ def prefix_distance(u, v):
     Output: prefix distance of u and v (int)
     """
     ### Replace the body of this function with your solution.
-    for i in range(u[i:len(u)], v[i:len(v)]):
-        dist = 0
-        if u[i:] == v[i:]:
+    dist = 0
+    for i in range(len(u)):
+        if len(u) == len(v):
             dist = dist + 1
-            return dist
+            
         else:
-            return 
+            break
+
+    ustring = len(u) - dist
+    vstring = len(v) - dist   
+    total = ustring + vstring
+    return total
+
+
 
 # Exercise 2
 def suffix_distance(u, v):
