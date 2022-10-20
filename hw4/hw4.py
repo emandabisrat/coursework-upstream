@@ -59,9 +59,9 @@ def prefix_distance(u, v):
 # Exercise 2
 def suffix_distance(u, v):
     ### Replace the body of this function with your solution.
-    pdist = 0
+    dist = 0
     for i in range(len(u)):
-        if u[:i] == v[:i]:
+        if u[:-i] == v[:-i]:
             dist = dist + 1
             
         else:
