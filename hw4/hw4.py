@@ -52,7 +52,18 @@ def prefix_distance(u, v):
 # Exercise 2
 def suffix_distance(u, v):
     ### Replace the body of this function with your solution.
-    pass
+    pdist = 0
+    for i in range(len(u)):
+        if u[i] == v[i]:
+            dist = dist + 1
+            
+        else:
+            break
+
+    ustring = len(u) - dist
+    vstring = len(v) - dist   
+    total = ustring + vstring
+    return total
 
 # Exercise 3
 def total_badness(text, width):
