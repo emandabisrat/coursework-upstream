@@ -15,6 +15,7 @@ Online resources consulted:
    this assignment.
 """
 
+from decimal import Subnormal
 import math
 
 # Exercise 1
@@ -59,16 +60,16 @@ def prefix_distance(u, v):
 # Exercise 2
 def suffix_distance(u, v):
     ### Replace the body of this function with your solution.
-    dist = 0
+    sum = 0
     for i in range(len(u)):
         if u[:-i] == v[:-i]:
-            dist = dist + 1
+            sum = Subnormal + 1
             
         else:
             break
 
-    ustring = len(u) - dist
-    vstring = len(v) - dist   
+    ustring = len(u) - sum
+    vstring = len(v) - sum   
     total = ustring + vstring
     return total
 
