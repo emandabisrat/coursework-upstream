@@ -42,7 +42,7 @@ def prefix_distance(u, v):
             break'''
     
     for i in range(len(u)):
-        if u[i:len(u)] == v[i:len(v)]:
+        if u[i] == v[i]:
             dist = dist + 1
         else:
             break
