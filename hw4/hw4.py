@@ -35,10 +35,9 @@ def prefix_distance(u, v):
     """
     ### Replace the body of this function with your solution.
     dist = 0
-    for i in range(len(u)):
+    for i in range(u[i:len(u)]):
         if u[i] == v[i]:
             dist = dist + 1
-            
         else:
             break
     total = (len(u) - dist) + (len(v) - dist)
