@@ -41,10 +41,10 @@ def prefix_distance(u, v):
             
         else:
             break
-
-    ustring = len(u) - dist
-    vstring = len(v) - dist   
-    total = ustring + vstring
+    total = (len(u) - dist) + (len(v) - dist)
+    #ustring = len(u) - dist
+    #vstring = len(v) - dist   
+    #total = ustring + vstring
     return total
 
 
@@ -54,7 +54,7 @@ def suffix_distance(u, v):
     ### Replace the body of this function with your solution.
     pdist = 0
     for i in range(len(u)):
-        if u[i] == v[i]:
+        if u[:i] == v[:i]:
             dist = dist + 1
             
         else:
