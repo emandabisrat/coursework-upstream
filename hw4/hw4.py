@@ -94,13 +94,16 @@ def split_lines(text, width):
     Output: a list of lines that each have a maximum width of the width input value
 
     '''
-    r = text.split('\n')
+    lines = text.split('\n')
     for i in range(len(text)):
-        line = r[i]
+        line = lines[i]
         if len(line) > width:
-            x = line.split(' ')
+            bad = len(line) - width
             break
-
+        else: 
+            break
+    
+    x = line.split(' ')
     
     return x 
 
