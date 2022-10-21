@@ -99,12 +99,14 @@ def split_lines(text, width):
     #text(len(width))
     #for i in text:
     #for i in range(text([0], [width])):
-    x = text.split(' ')
+    #for i in [width]:
+    x = text.split('\n')
+
     #len(width)
     #x = text.split(' ')
     return x
 
-    
+
 # Exercise 5
 def arrange_lines(text, width, blanks_visible):
     ### Replace the body of this function with your solution.
