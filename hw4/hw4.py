@@ -100,12 +100,15 @@ def split_lines(text, width):
     #for i in text:
     #for i in range(text([0], [width])):
     #or i in text[width]:
+    for i in range(len(text)):
+        if [i] == width:
+            result = text.splitlines('\n')
 
     x = text.split(' ')
     
     #len(width)
     #x = text.split(' ')
-    return x
+    return x, result
 
 
 # Exercise 5
