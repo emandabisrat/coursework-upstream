@@ -82,8 +82,8 @@ def split_lines(text, width):
     #for i in range(len(text)):
     #text(len(width))
     #for i in text:
-    for i in range(text([0], [width])):
-        x = text.split(' ')
+    #for i in range(text([0], [width])):
+    x = text.split(' ')
     #len(width)
     #x = text.split(' ')
     return x
