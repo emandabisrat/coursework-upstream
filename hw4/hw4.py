@@ -80,10 +80,10 @@ def total_badness(text, width):
 def split_lines(text, width):
     ### Replace the body of this function with your solution.
     #for i in range(len(text)):
-    substring = text(len(width))
+    #text(len(width))
     #for i in text:
     
-    x = substring.split(' ')
+    x = text(len(width)).split(' ')
     return x
 
     
