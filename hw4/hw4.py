@@ -46,19 +46,6 @@ def prefix_distance(u, v):
     return sum    
 
 
-        
-    '''for i in range(len(u)):
-        if u[i] == v[i]:
-            dist = dist + 1
-        else:
-            break'''
-
-
-    #total = (len(u) - dist) + (len(v) - dist)
-    #ustring = len(u) - dist
-    #vstring = len(v) - dist   
-    #total = ustring + vstring
-    return total 
 
 
 
@@ -76,74 +63,20 @@ def suffix_distance(u, v):
                 break
     return dist
 
-    '''sum = 0
-    for i in range(len(u)):
-        if u[-i] == v[-i]:
-            sum = sum + 1
-            
-        else:
-            break
-
-    total = (len(u) - sum) + (len(v) - sum)
-    return total'''
-
+    
 # Exercise 3
 def total_badness(text, width):
     ### Replace the body of this function with your solution.
-    r = text.split('\n')
-    curr_bad = 0
-    total_bad = 0
-    for l in range(len(r) - 1): # skips last line 
-        line = r[l]
-        curr_bad = 0
-        total_bad += curr_bad**3
-
-        # Check if current line is a single word longer than width
-        if (len(line.split(' ')) == 1) & (len(line) > width): 
-            curr_bad = len(line) - width
-            total_bad += curr_bad**3
-            break # go to next line
-            
-        for i in range(len(line) - 1, 0, -1): # go through line backwards
-            curr_char = line[i]
-            next_char = line[i - 1]
-            if (curr_char == ' ') & (next_char != ' '):
-                curr_bad += 1 
-                total_bad += curr_bad**3
-                break ## go to next line bc we've hit a word 1
-
-            if (curr_char == ' ') & (next_char == ' '):
-                curr_bad += 1
-        print('current:', curr_bad)
-        
-        
-        
-    return total_bad
-
+    pass
 
 # Exercise 4
 def split_lines(text, width):
     ### Replace the body of this function with your solution.
-    #for i in range(len(text)):
-    #text(len(width))
-    #for i in text:
-    #for i in range(text([0], [width])):
-    #or i in text[width]:
-    r = text.split('\n')
-    
-    for i in range(len(text)):
-        line = r[i]
-        if len(line) > width:
-            bad = len(line) - width
-            total_bad += bad**3
-            break
-    #result = text.splitlines('\n')
 
-    #x = text.split(' ')
+    x = text.split(' ')
     
-    #len(width)
-    #x = text.split(' ')
-    return total_bad 
+    
+    return  x
 
 
 # Exercise 5
