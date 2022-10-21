@@ -35,21 +35,26 @@ def prefix_distance(u, v):
     Output: prefix distance of u and v (int)
     """
     ### Replace the body of this function with your solution.
-    dist = 0
+    sum = len(u) + len(v)
+    large= max(len(u), len(v))
+    for i in range(large):
+        if i < (len(u) and len(v)):
+            if u[i] == v[i]:
+                sum = sum - 2
+            elif u[i] != v[i]:
+                break
+    return sum    
+
+
+        
     '''for i in range(len(u)):
         if u[i] == v[i]:
             dist = dist + 1
         else:
             break'''
-    
-    for i in range(len(u)):
-        if u[i] == v[i]:
-            dist = dist + 1
-        else:
-            break
 
 
-    total = (len(u) - dist) + (len(v) - dist)
+    #total = (len(u) - dist) + (len(v) - dist)
     #ustring = len(u) - dist
     #vstring = len(v) - dist   
     #total = ustring + vstring
@@ -60,7 +65,18 @@ def prefix_distance(u, v):
 # Exercise 2
 def suffix_distance(u, v):
     ### Replace the body of this function with your solution.
-    sum = 0
+
+    overall = max(len(u), len(v)) 
+    dist = len(u) + len(v)
+    for i in range(overall):
+        if i < (len(v) and len(u)):
+            if u[-1] == v[-1]:
+                dist = dist -2
+            elif u[-1] != v[-i]:
+                break
+    return dist
+
+    '''sum = 0
     for i in range(len(u)):
         if u[-i] == v[-i]:
             sum = sum + 1
@@ -69,7 +85,7 @@ def suffix_distance(u, v):
             break
 
     total = (len(u) - sum) + (len(v) - sum)
-    return total
+    return total'''
 
 # Exercise 3
 def total_badness(text, width):
