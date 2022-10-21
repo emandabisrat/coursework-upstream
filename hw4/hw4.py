@@ -72,11 +72,17 @@ def total_badness(text, width):
 # Exercise 4
 def split_lines(text, width):
     ### Replace the body of this function with your solution.
+    r = text.split('\n')
+    for i in range(len(text)):
+        line = r[i]
+        if len(line) > width:
+            new = len(line) - width
+            break
 
     x = text.split(' ')
     
     
-    return  x
+    return x, new
 
 
 # Exercise 5
