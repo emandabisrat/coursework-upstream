@@ -99,9 +99,9 @@ def split_lines(text, width):
     #text(len(width))
     #for i in text:
     #for i in range(text([0], [width])):
-    #for i in [width]:
-    x = text.split('\n')
-
+    for i in text[width]:
+        x = text.split(' ')
+        
     #len(width)
     #x = text.split(' ')
     return x
