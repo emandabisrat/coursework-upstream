@@ -90,7 +90,36 @@ def suffix_distance(u, v):
 # Exercise 3
 def total_badness(text, width):
     ### Replace the body of this function with your solution.
-    pass
+    r = text.split('\n')
+    curr_bad = 0
+    total_bad = 0
+    for l in range(len(r) - 1): # skips last line 
+        line = r[l]
+        curr_bad = 0
+        total_bad += curr_bad**3
+
+        # Check if current line is a single word longer than width
+        if (len(line.split(' ')) == 1) & (len(line) > width): 
+            curr_bad = len(line) - width
+            total_bad += curr_bad**3
+            break # go to next line
+            
+        for i in range(len(line) - 1, 0, -1): # go through line backwards
+            curr_char = line[i]
+            next_char = line[i - 1]
+            if (curr_char == ' ') & (next_char != ' '):
+                curr_bad += 1 
+                total_bad += curr_bad**3
+                break ## go to next line bc we've hit a word 1
+
+            if (curr_char == ' ') & (next_char == ' '):
+                curr_bad += 1
+        print('current:', curr_bad)
+        
+        
+        
+    return total_bad
+
 
 # Exercise 4
 def split_lines(text, width):
@@ -100,15 +129,21 @@ def split_lines(text, width):
     #for i in text:
     #for i in range(text([0], [width])):
     #or i in text[width]:
+    r = text.split('\n')
+    
     for i in range(len(text)):
-        if [i] == width:
-            result = text.splitlines('\n')
+        line = r[i]
+        if len(line) > width:
+            bad = len(line) - width
+            total_bad += bad**3
+            break
+    #result = text.splitlines('\n')
 
-    x = text.split(' ')
+    #x = text.split(' ')
     
     #len(width)
     #x = text.split(' ')
-    return x, result
+    return total_bad 
 
 
 # Exercise 5
