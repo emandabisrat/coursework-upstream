@@ -51,7 +51,18 @@ def prefix_distance(u, v):
 
 # Exercise 2
 def suffix_distance(u, v):
-    ### Replace the body of this function with your solution.
+    """
+    Computes the suffix distance of u and v. The suffix distance is the total
+    number of characters that do not belong to the longest common suffix shared
+    by u and v.
+
+
+    Input:
+        u (str): first input string
+        v (str): second input string
+
+    Output: suffix distance of u and v (int)
+    """
 
     overall = max(len(u), len(v)) 
     dist = len(u) + len(v)
@@ -66,12 +77,23 @@ def suffix_distance(u, v):
     
 # Exercise 3
 def total_badness(text, width):
-    ### Replace the body of this function with your solution.
+
     pass
 
 # Exercise 4
 def split_lines(text, width):
-    ### Replace the body of this function with your solution.
+   
+    '''
+    Inputs the text of usage and the width that the lines within the text have to be. 
+    This will return a list of lines that have a length at most the given width.
+
+    Input:
+        text (lst): first input list
+        width (int): an integer that varies based upon the text
+    
+    Output: a list of lines that each have a maximum width of the width input value
+
+    '''
     r = text.split('\n')
     for i in range(len(text)):
         line = r[i]
