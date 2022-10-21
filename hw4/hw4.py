@@ -76,13 +76,11 @@ def split_lines(text, width):
     for i in range(len(text)):
         line = r[i]
         if len(line) > width:
-            new = len(line) - width
+            x = line.split(' ')
             break
 
-    x = text.split(' ')
     
-    
-    return x, new
+    return x 
 
 
 # Exercise 5
