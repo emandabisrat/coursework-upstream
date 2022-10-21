@@ -80,8 +80,11 @@ def total_badness(text, width):
 def split_lines(text, width):
     ### Replace the body of this function with your solution.
     #for i in range(len(text)):
-    x = text.split(' ')
+    for i in text:
+        if len(text) == width:
+            x = text.split(' ')
     return x
+
     
 # Exercise 5
 def arrange_lines(text, width, blanks_visible):
