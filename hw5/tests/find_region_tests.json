@@ -969,22 +969,35 @@
         "image_filename": "tests/test2.ppm",
         "loc": [
             5,
-            5
+            4
         ],
         "radius": 0,
-        "expected": []
+        "expected": [
+            [
+                5,
+                4
+            ]
+        ]
     },
     {
         "image_filename": "tests/test2.ppm",
         "loc": [
             5,
-            5
+            4
         ],
         "radius": 1,
         "expected": [
             [
                 4,
+                3
+            ],
+            [
+                4,
                 4
+            ],
+            [
+                5,
+                3
             ],
             [
                 5,
@@ -996,7 +1009,7 @@
         "image_filename": "tests/test2.ppm",
         "loc": [
             5,
-            5
+            4
         ],
         "radius": 10,
         "expected": [
