@@ -138,9 +138,8 @@ def test_find_region_locations(tst_dict):
             rmsg
 
     # We expect a result that is the same as expected
-    helpers.check_equals(actual, expected, rmsg)
+    helpers.check_equals(set(actual), set(expected), rmsg)
 
-    check_result(actual, expected, rmsg)
 
 
 @pytest.mark.parametrize("tst_dict",
