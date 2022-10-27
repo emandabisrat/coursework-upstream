@@ -22,10 +22,11 @@ BLACK = (0, 0, 0)
 def create_greyscale(image):
     ### Replace the body of this function with your solution.
     new_image = []
-    for lst in range(image):
+    for lst in image:
         for red,green,blue in lst:
-            grey = (((77 * red) + (150 * green) + (29 * blue)) // 256)
-            new = new_image.append(grey)
+            grey = int(((77 * red) + (150 * green) + (29 * blue)))
+            #new = new_image.append(grey)
+            new = image.Pixel(grey)
     return new
 def find_region_locations(image, loc, radius):
     ### Replace the body of this function with your solution.
