@@ -1,0 +1,182 @@
+[
+    {
+        "image_filename": "tests/test1.ppm",
+        "expected_filename": "tests/test1-blackout-2-2-1.ppm",
+        "loc": [
+            2,
+            2
+        ],
+        "radius": 1
+    },
+    {
+        "image_filename": "tests/test1.ppm",
+        "expected_filename": "tests/test1-blackout-2-2-10.ppm",
+        "loc": [
+            2,
+            2
+        ],
+        "radius": 10
+    },
+    {
+        "image_filename": "tests/test1.ppm",
+        "expected_filename": "tests/test1-blackout-0-0-1.ppm",
+        "loc": [
+            0,
+            0
+        ],
+        "radius": 1
+    },
+    {
+        "image_filename": "tests/test1.ppm",
+        "expected_filename": "tests/test1-blackout-0-0-10.ppm",
+        "loc": [
+            0,
+            0
+        ],
+        "radius": 10
+    },
+    {
+        "image_filename": "tests/test1.ppm",
+        "expected_filename": "tests/test1-blackout-3-3-1.ppm",
+        "loc": [
+            3,
+            3
+        ],
+        "radius": 1
+    },
+    {
+        "image_filename": "tests/test1.ppm",
+        "expected_filename": "tests/test1-blackout-3-3-10.ppm",
+        "loc": [
+            3,
+            3
+        ],
+        "radius": 10
+    },
+    {
+        "image_filename": "tests/test1.ppm",
+        "expected_filename": "tests/test1-blackout-0-2-1.ppm",
+        "loc": [
+            0,
+            2
+        ],
+        "radius": 1
+    },
+    {
+        "image_filename": "tests/test1.ppm",
+        "expected_filename": "tests/test1-blackout-0-2-10.ppm",
+        "loc": [
+            0,
+            2
+        ],
+        "radius": 10
+    },
+    {
+        "image_filename": "tests/test1.ppm",
+        "expected_filename": "tests/test1-blackout-2-3-1.ppm",
+        "loc": [
+            2,
+            3
+        ],
+        "radius": 1
+    },
+    {
+        "image_filename": "tests/test1.ppm",
+        "expected_filename": "tests/test1-blackout-2-3-10.ppm",
+        "loc": [
+            2,
+            3
+        ],
+        "radius": 10
+    },
+    {
+        "image_filename": "tests/test2.ppm",
+        "expected_filename": "tests/test2-blackout-3-2-1.ppm",
+        "loc": [
+            3,
+            2
+        ],
+        "radius": 1
+    },
+    {
+        "image_filename": "tests/test2.ppm",
+        "expected_filename": "tests/test2-blackout-3-2-10.ppm",
+        "loc": [
+            3,
+            2
+        ],
+        "radius": 10
+    },
+    {
+        "image_filename": "tests/test2.ppm",
+        "expected_filename": "tests/test2-blackout-0-0-1.ppm",
+        "loc": [
+            0,
+            0
+        ],
+        "radius": 1
+    },
+    {
+        "image_filename": "tests/test2.ppm",
+        "expected_filename": "tests/test2-blackout-0-0-10.ppm",
+        "loc": [
+            0,
+            0
+        ],
+        "radius": 10
+    },
+    {
+        "image_filename": "tests/test2.ppm",
+        "expected_filename": "tests/test2-blackout-5-4-1.ppm",
+        "loc": [
+            5,
+            4
+        ],
+        "radius": 1
+    },
+    {
+        "image_filename": "tests/test2.ppm",
+        "expected_filename": "tests/test2-blackout-5-4-10.ppm",
+        "loc": [
+            5,
+            4
+        ],
+        "radius": 10
+    },
+    {
+        "image_filename": "tests/test2.ppm",
+        "expected_filename": "tests/test2-blackout-0-2-1.ppm",
+        "loc": [
+            0,
+            2
+        ],
+        "radius": 1
+    },
+    {
+        "image_filename": "tests/test2.ppm",
+        "expected_filename": "tests/test2-blackout-0-2-10.ppm",
+        "loc": [
+            0,
+            2
+        ],
+        "radius": 10
+    },
+    {
+        "image_filename": "tests/test2.ppm",
+        "expected_filename": "tests/test2-blackout-3-4-1.ppm",
+        "loc": [
+            3,
+            4
+        ],
+        "radius": 1
+    },
+    {
+        "image_filename": "tests/test2.ppm",
+        "expected_filename": "tests/test2-blackout-3-4-10.ppm",
+        "loc": [
+            3,
+            4
+        ],
+        "radius": 10
+    }
+]
