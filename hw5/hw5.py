@@ -24,7 +24,8 @@ def create_greyscale(image):
     pass
     for tul in image:
         for i in tul:
-            grey = ((77 * image[tul][i][0]) + (150 * image[tul][i][1]) + (29 * image[tul][i][2]))
+            #grey = ((77 * image[tul][i][0]) + (150 * image[tul][i][1]) + (29 * image[tul][i][2]))
+            grey = ((77 * i[0]) + (150 * i[1]) + (29 * i[2]))
             g = int(grey)
     return g
 def find_region_locations(image, loc, radius):
