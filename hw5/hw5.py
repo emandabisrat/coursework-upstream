@@ -29,7 +29,8 @@ def create_greyscale(image):
             grey = int(((77 * red) + (150 * green) + (29 * blue)) / 256)
             #g = int(grey)
             #new = new_image.append(g)
-    return image
+    new_image = image
+    return new_image
 def find_region_locations(image, loc, radius):
     ### Replace the body of this function with your solution.
     pass
