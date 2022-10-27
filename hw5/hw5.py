@@ -22,9 +22,9 @@ BLACK = (0, 0, 0)
 def create_greyscale(image):
     ### Replace the body of this function with your solution.
     
-    for tul in image:
-        for i in tul:
-            grey = ((77 * image[tul][i][0]) + (150 * image[tul][i][1]) + (29 * image[tul][i][2]))
+    for tup in image:
+        for red,green,blue in tup:
+            grey = ((77 * image[tup][i][0]) + (150 * image[tup][i][1]) + (29 * image[tup][i][2]))
             #grey = ((77 * i[0]) + (150 * i[1]) + (29 * i[2]))
             g = int(grey)
     return g
