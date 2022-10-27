@@ -37,8 +37,6 @@ def find_region_locations(image, loc, radius):
             if radius >= abs(i - k) and radius >= abs(j - l):
                 lst.append(i,j)
     return lst
-        
-
     
 def blackout_region(image, loc, radius):
     ### Replace the body of this function with your solution.
