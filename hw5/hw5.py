@@ -24,14 +24,22 @@ def create_greyscale(image):
     new_image = []
     for lst in image:
         for red,green,blue in lst:
-            grey = int(((77 * red) + (150 * green) + (29 * blue)))
-            #new = new_image.append(grey)
-            new = image.Pixel(grey)
-    return new
+            grey = (((77 * red) + (150 * green) + (29 * blue))//256)
+            new_image = new_image.append(grey)
+    return new_image
 def find_region_locations(image, loc, radius):
     ### Replace the body of this function with your solution.
-    pass
+    lst = []
+    for i, x in enumerate(image):
+        for j, item in enumerate(x):
+            k = loc[0]
+            l = loc[1]
+            if radius >= abs(i - k) and radius >= abs(j - l):
+                lst.append(i,j)
+    return lst
+        
 
+    
 def blackout_region(image, loc, radius):
     ### Replace the body of this function with your solution.
     pass
