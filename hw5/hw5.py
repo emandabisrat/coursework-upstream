@@ -34,7 +34,6 @@ def create_greyscale(image):
 
     Output: 
         new_image(lst) : a list of lists of tuples
-    
     '''
     new_image = []
     for lst1 in image:
@@ -78,7 +77,7 @@ def blackout_region(image, loc, radius):
         radius (int) : an integer
     
     Output:
-        None
+        None : the image is only modified
     '''
     for i, x in enumerate(image):
         for j, item in enumerate(x):
@@ -90,9 +89,20 @@ def blackout_region(image, loc, radius):
 
 def blur_image(image, radius):
     '''
-    A function that takes 
+    A function that takes an image and a radius for an image and then computes 
+    a new image in which each pixel is a blurred version. The region is 
+    determined by the radius. 
+
+    Input: 
+        image(lst) : a list of lists of tuples
+        radius(int) : an integer
+    
+    Output:
+        new_image(lst): a lst of lists of tuples
     '''
-    region = find_region_locations()
+    loc = ()
+    x,y = loc
+    region = find_region_locations(image, loc, radius)
     new_image = []
     count = 0
     for i in region:
@@ -102,6 +112,6 @@ def blur_image(image, radius):
             blue_sum = blue_sum + tup[1]
             green_sum = green_sum + tup[2]
             count = count + 1
-    lst.append((red_sum/count, blue_sum/count, green_sum/count))
+        lst.append((red_sum/count, blue_sum/count, green_sum/count))
     new_image.append(lst)
     return new_image
