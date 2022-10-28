@@ -22,10 +22,12 @@ BLACK = (0, 0, 0)
 def create_greyscale(image):
     ### Replace the body of this function with your solution.
     new_image = []
-    for lst in image:
-        for red,green,blue in lst:
+    for lst1 in image:
+        lst = []
+        for red,green,blue in lst1:
             grey = (((77 * red) + (150 * green) + (29 * blue))//256)
-            new_image.append((grey, grey, grey))
+            lst.append((grey, grey, grey))
+        new_image.append(lst)
     return new_image
 def find_region_locations(image, loc, radius):
     ### Replace the body of this function with your solution.
@@ -45,21 +47,23 @@ def blackout_region(image, loc, radius):
             k = loc[0]
             l = loc[1]
             if (radius >= abs(i - k) and radius >= abs(j - l)):
-                image[i][j] == BLACK
-                image.append((image[i][j]))
-    return image
+                image[i][j] = (BLACK)
+    
 
 def blur_image(image, radius):
     ### Replace the body of this function with your solution.
     new_image = []
+    count = 0
     for i in image:
-        for x in i:
-            red_sum = red_sum + x[0]
-            blue_sum = blue_sum + x[1]
-            green_sum = green_sum + x[2]
-            
-    red_avg = red_sum/len(red_sum)
-    blue_avg = blue_sum/len(blue_sum)
-    green_avg = green_sum/len(green_sum)
-    new_image.append(red_avg, blue_avg, green_avg)
+        for tup in i:
+            red_sum = red_sum + tup[0]
+            blue_sum = blue_sum + tup[1]
+            green_sum = green_sum + tup[2]
+            count = count + 1
+
+    #red_avg = red_sum/count
+    #blue_avg = blue_sum/count
+    #green_avg = green_sum/count
+    #new_image.append((red_avg, blue_avg, green_avg))
+    new_image.append((red_sum/count, blue_sum/count, green_sum/count))
     return new_image
