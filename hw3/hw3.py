@@ -76,7 +76,7 @@ def largest_of_three(lst, idx):
     
     for i in lst:
         if idx == 0:
-            result = max(lst[0], lst[1], lst[(len(lst))- 1])
+            result = max(lst[idx], lst[idx + 1], lst[(len(lst))- 1])
         elif idx == (len(lst) - 1):
             result = max((lst[len(lst) - 1]), lst[(len(lst) - 1) - 1], lst[0])
         else:
@@ -105,7 +105,14 @@ def seq(n):
     assert n >= 0
 
     ### EXERCISE 3 -- YOUR CODE TO COMPUTE result GOES HERE
-    result = None
+    s0 = 1
+    s1 = 1
+    s2 = 1
+    sn = 1
+    for i in range(3, n + 1):
+        result = s0 + s1
+
+
 
     ### DO NOT REMOVE THE return STATEMENT BELOW
     return result
