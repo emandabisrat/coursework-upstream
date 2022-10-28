@@ -61,9 +61,5 @@ def blur_image(image, radius):
             green_sum = green_sum + tup[2]
             count = count + 1
 
-    #red_avg = red_sum/count
-    #blue_avg = blue_sum/count
-    #green_avg = green_sum/count
-    #new_image.append((red_avg, blue_avg, green_avg))
     new_image.append((red_sum/count, blue_sum/count, green_sum/count))
     return new_image
