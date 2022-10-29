@@ -1,0 +1,51 @@
+[
+    {
+        "orig_filename": "tests/load-input-7.json",
+        "user_filename": "tests/load-result-7.json",
+        "user_id": "p06",
+        "var_name": "absences",
+        "expected": 9
+    },
+    {
+        "orig_filename": "tests/load-input-7.json",
+        "user_filename": "tests/load-result-7.json",
+        "user_id": "p01",
+        "var_name": "address",
+        "expected": 0
+    },
+    {
+        "orig_filename": "tests/load-input-7.json",
+        "user_filename": "tests/load-result-7.json",
+        "user_id": "p01",
+        "var_name": "area",
+        "expected": 0
+    },
+    {
+        "orig_filename": "tests/load-input-7.json",
+        "user_filename": "tests/load-result-7.json",
+        "user_id": "p01",
+        "var_name": "month",
+        "expected": -1
+    },
+    {
+        "orig_filename": "tests/evm-logs.json",
+        "user_filename": "tests/evm-logs-load-result.json",
+        "user_id": "p12",
+        "var_name": "alcohol",
+        "expected": 1
+    },
+    {
+        "orig_filename": "tests/evm-logs.json",
+        "user_filename": "tests/evm-logs-load-result.json",
+        "user_id": "p12",
+        "var_name": "study_time",
+        "expected": 22
+    },
+    {
+        "orig_filename": "tests/evm-logs.json",
+        "user_filename": "tests/evm-logs-load-result.json",
+        "user_id": "p05",
+        "var_name": "internet",
+        "expected": 4
+    }
+]

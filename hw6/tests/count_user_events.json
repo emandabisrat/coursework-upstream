@@ -1,0 +1,66 @@
+[
+    {
+        "input_filename": "tests/load-input-0.json",
+        "expected": {}
+    },
+    {
+        "input_filename": "tests/load-input-1.json",
+        "expected": {
+            "p01": 1
+        }
+    },
+    {
+        "input_filename": "tests/load-input-2.json",
+        "expected": {
+            "p06": 1
+        }
+    },
+    {
+        "input_filename": "tests/load-input-3.json",
+        "expected": {
+            "p08": 1
+        }
+    },
+    {
+        "input_filename": "tests/load-input-4.json",
+        "expected": {
+            "p01": 5
+        }
+    },
+    {
+        "input_filename": "tests/load-input-5.json",
+        "expected": {
+            "p06": 129
+        }
+    },
+    {
+        "input_filename": "tests/load-input-6.json",
+        "expected": {
+            "p01": 1,
+            "p06": 1,
+            "p08": 1
+        }
+    },
+    {
+        "input_filename": "tests/load-input-7.json",
+        "expected": {
+            "p01": 5,
+            "p06": 129,
+            "p08": 2
+        }
+    },
+    {
+        "input_filename": "tests/evm-logs.json",
+        "expected": {
+            "p01": 59,
+            "p06": 129,
+            "p11": 114,
+            "p04": 117,
+            "p09": 151,
+            "p08": 189,
+            "p07": 187,
+            "p05": 68,
+            "p12": 71
+        }
+    }
+]

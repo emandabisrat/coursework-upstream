@@ -1,0 +1,41 @@
+{
+    "p01": [
+        {
+            "x": null,
+            "y": null,
+            "row": null,
+            "column": null,
+            "operations": []
+        },
+        {
+            "x": null,
+            "y": "area",
+            "row": null,
+            "column": null,
+            "operations": []
+        },
+        {
+            "x": "area",
+            "y": "month",
+            "row": null,
+            "column": null,
+            "operations": [
+                "transforms"
+            ]
+        },
+        {
+            "x": null,
+            "y": null,
+            "row": "address",
+            "column": null,
+            "operations": []
+        },
+        {
+            "x": null,
+            "y": "absences",
+            "row": null,
+            "column": "address",
+            "operations": []
+        }
+    ]
+}

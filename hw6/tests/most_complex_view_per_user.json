@@ -1,0 +1,63 @@
+[
+    {
+        "orig_filename": "tests/load-input-1.json",
+        "user_filename": "tests/load-result-1.json",
+        "expected": {
+            "p01": 0
+        }
+    },
+    {
+        "orig_filename": "tests/load-input-1.json",
+        "user_filename": "tests/load-result-1.json",
+        "expected": {
+            "p01": 0
+        }
+    },
+    {
+        "orig_filename": "tests/load-input-2.json",
+        "user_filename": "tests/load-result-2.json",
+        "expected": {
+            "p06": 0
+        }
+    },
+    {
+        "orig_filename": "tests/load-input-4.json",
+        "user_filename": "tests/load-result-4.json",
+        "expected": {
+            "p01": 2
+        }
+    },
+    {
+        "orig_filename": "tests/load-input-6.json",
+        "user_filename": "tests/load-result-6.json",
+        "expected": {
+            "p01": 0,
+            "p06": 0,
+            "p08": 0
+        }
+    },
+    {
+        "orig_filename": "tests/load-input-7.json",
+        "user_filename": "tests/load-result-7.json",
+        "expected": {
+            "p01": 2,
+            "p06": 58,
+            "p08": 1
+        }
+    },
+    {
+        "orig_filename": "tests/evm-logs.json",
+        "user_filename": "tests/evm-logs-load-result.json",
+        "expected": {
+            "p01": 32,
+            "p06": 58,
+            "p11": 21,
+            "p04": 17,
+            "p09": 38,
+            "p08": 3,
+            "p07": 178,
+            "p05": 52,
+            "p12": 43
+        }
+    }
+]

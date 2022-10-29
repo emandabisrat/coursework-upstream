@@ -1,0 +1,11 @@
+{
+    "p06": [
+        {
+            "x": "travel_time",
+            "y": "absences",
+            "row": "address",
+            "column": "internet",
+            "operations": []
+        }
+    ]
+}

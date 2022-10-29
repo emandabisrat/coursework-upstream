@@ -1,0 +1,38 @@
+[
+    {
+        "input_filename": "tests/load-input-0.json",
+        "output_filename": "tests/load-result-0.json"
+    },
+    {
+        "input_filename": "tests/load-input-1.json",
+        "output_filename": "tests/load-result-1.json"
+    },
+    {
+        "input_filename": "tests/load-input-2.json",
+        "output_filename": "tests/load-result-2.json"
+    },
+    {
+        "input_filename": "tests/load-input-3.json",
+        "output_filename": "tests/load-result-3.json"
+    },
+    {
+        "input_filename": "tests/load-input-4.json",
+        "output_filename": "tests/load-result-4.json"
+    },
+    {
+        "input_filename": "tests/load-input-5.json",
+        "output_filename": "tests/load-result-5.json"
+    },
+    {
+        "input_filename": "tests/load-input-6.json",
+        "output_filename": "tests/load-result-6.json"
+    },
+    {
+        "input_filename": "tests/load-input-7.json",
+        "output_filename": "tests/load-result-7.json"
+    },
+    {
+        "input_filename": "tests/evm-logs.json",
+        "output_filename": "tests/evm-logs-load-result.json"
+    }
+]

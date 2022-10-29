@@ -1,0 +1,101 @@
+[
+    {
+        "index": 0,
+        "expected": {
+            "x": null,
+            "y": null,
+            "row": null,
+            "column": null,
+            "operations": []
+        }
+    },
+    {
+        "index": 3,
+        "expected": {
+            "x": null,
+            "y": "area",
+            "row": null,
+            "column": null,
+            "operations": []
+        }
+    },
+    {
+        "index": 20,
+        "expected": {
+            "x": null,
+            "y": null,
+            "row": "address",
+            "column": null,
+            "operations": []
+        }
+    },
+    {
+        "index": 25,
+        "expected": {
+            "x": null,
+            "y": "absences",
+            "row": null,
+            "column": "address",
+            "operations": []
+        }
+    },
+    {
+        "index": 117,
+        "expected": {
+            "x": "travel_time",
+            "y": "absences",
+            "row": "address",
+            "column": "internet",
+            "operations": []
+        }
+    },
+    {
+        "index": 7,
+        "expected": {
+            "x": "area",
+            "y": "month",
+            "row": null,
+            "column": null,
+            "operations": [
+                "transforms"
+            ]
+        }
+    },
+    {
+        "index": 27,
+        "expected": {
+            "x": "travel_time",
+            "y": "absences",
+            "row": null,
+            "column": "address",
+            "operations": [
+                "models"
+            ]
+        }
+    },
+    {
+        "index": 645,
+        "expected": {
+            "x": null,
+            "y": null,
+            "row": null,
+            "column": null,
+            "operations": [
+                "filters"
+            ]
+        }
+    },
+    {
+        "index": 31,
+        "expected": {
+            "x": null,
+            "y": "absences",
+            "row": null,
+            "column": "address",
+            "operations": [
+                "transforms",
+                "models"
+            ]
+        }
+    }
+]
