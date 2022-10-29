@@ -3599,13 +3599,6 @@
                     "field": "area",
                     "type": "quantitative"
                 },
-                "color": {
-                    "field": "modelcheck_group",
-                    "type": "nominal",
-                    "scale": {
-                        "domain": "[data"
-                    }
-                },
                 "x": {
                     "field": "temp",
                     "type": "quantitative"
@@ -3749,13 +3742,6 @@
                 "x": {
                     "field": "temp",
                     "type": "quantitative"
-                },
-                "color": {
-                    "field": "modelcheck_group",
-                    "type": "nominal",
-                    "scale": {
-                        "domain": "[data"
-                    }
                 }
             }
         }

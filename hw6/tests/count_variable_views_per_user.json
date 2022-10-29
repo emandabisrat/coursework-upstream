@@ -18,10 +18,10 @@
         "user_filename": "tests/load-result-2.json",
         "expected": {
             "p06": {
+                "absences": 1,
                 "travel_time": 1,
                 "internet": 1,
-                "address": 1,
-                "absences": 1
+                "address": 1
             }
         }
     },
@@ -43,10 +43,10 @@
         "expected": {
             "p01": {},
             "p06": {
+                "absences": 1,
                 "travel_time": 1,
                 "internet": 1,
-                "address": 1,
-                "absences": 1
+                "address": 1
             },
             "p08": {}
         }
