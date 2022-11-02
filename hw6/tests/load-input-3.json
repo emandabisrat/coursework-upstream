@@ -1,0 +1,18 @@
+[
+    {
+        "user_id": "p08",
+        "time": "2022-08-25 14:21:26",
+        "dataset": "Forest fires",
+        "filters": true,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": "tick",
+            "encoding": {}
+        }
+    }
+]

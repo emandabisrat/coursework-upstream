@@ -1,0 +1,42 @@
+[
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:53:00",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "circle",
+                "size": "30"
+            },
+            "encoding": {
+                "y": {
+                    "field": "absences",
+                    "type": "quantitative"
+                },
+                "x": {
+                    "field": "travel_time",
+                    "type": "quantitative"
+                },
+                "row": {
+                    "field": "address"
+                },
+                "column": {
+                    "field": "internet"
+                }
+            },
+            "config": {
+                "axis": {
+                    "grid": "True",
+                    "tickBand": "extent"
+                }
+            }
+        }
+    }
+]

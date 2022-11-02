@@ -1,0 +1,243 @@
+[
+    {
+        "orig_filename": "tests/load-input-1.json",
+        "user_filename": "tests/load-result-1.json",
+        "expected": {
+            "p01": {}
+        }
+    },
+    {
+        "orig_filename": "tests/load-input-1.json",
+        "user_filename": "tests/load-result-1.json",
+        "expected": {
+            "p01": {}
+        }
+    },
+    {
+        "orig_filename": "tests/load-input-2.json",
+        "user_filename": "tests/load-result-2.json",
+        "expected": {
+            "p06": {
+                "absences": 1,
+                "travel_time": 1,
+                "internet": 1,
+                "address": 1
+            }
+        }
+    },
+    {
+        "orig_filename": "tests/load-input-4.json",
+        "user_filename": "tests/load-result-4.json",
+        "expected": {
+            "p01": {
+                "area": 2,
+                "month": 1,
+                "address": 2,
+                "absences": 1
+            }
+        }
+    },
+    {
+        "orig_filename": "tests/load-input-6.json",
+        "user_filename": "tests/load-result-6.json",
+        "expected": {
+            "p01": {},
+            "p06": {
+                "absences": 1,
+                "travel_time": 1,
+                "internet": 1,
+                "address": 1
+            },
+            "p08": {}
+        }
+    },
+    {
+        "orig_filename": "tests/load-input-7.json",
+        "user_filename": "tests/load-result-7.json",
+        "expected": {
+            "p01": {
+                "area": 2,
+                "month": 1,
+                "address": 2,
+                "absences": 1
+            },
+            "p06": {
+                "absences": 68,
+                "travel_time": 15,
+                "age": 8,
+                "study_time": 19,
+                "failures": 4,
+                "address": 12,
+                "internet": 15,
+                "g_edu": 4,
+                "g_job": 3,
+                "alcohol": 6,
+                "area": 19,
+                "rh": 1,
+                "dmc": 1,
+                "ffmc": 1,
+                "dc": 1,
+                "month": 1,
+                "temp": 6
+            },
+            "p08": {
+                "area": 1
+            }
+        }
+    },
+    {
+        "orig_filename": "tests/evm-logs.json",
+        "user_filename": "tests/evm-logs-load-result.json",
+        "expected": {
+            "p01": {
+                "area": 6,
+                "month": 4,
+                "absences": 29,
+                "address": 22,
+                "travel_time": 11
+            },
+            "p06": {
+                "absences": 68,
+                "travel_time": 15,
+                "age": 8,
+                "study_time": 19,
+                "failures": 4,
+                "address": 12,
+                "internet": 15,
+                "g_edu": 4,
+                "g_job": 3,
+                "alcohol": 6,
+                "area": 19,
+                "rh": 1,
+                "dmc": 1,
+                "ffmc": 1,
+                "dc": 1,
+                "month": 1,
+                "temp": 6
+            },
+            "p11": {
+                "area": 28,
+                "ffmc": 3,
+                "dc": 8,
+                "dmc": 3,
+                "temp": 11,
+                "rh": 7,
+                "month": 9,
+                "rain": 7,
+                "wind": 11,
+                "age": 5,
+                "address": 10,
+                "internet": 3,
+                "study_time": 16,
+                "g_job": 1,
+                "g_edu": 1,
+                "absences": 24,
+                "travel_time": 5
+            },
+            "p04": {
+                "absences": 80,
+                "failures": 5,
+                "study_time": 24,
+                "internet": 12,
+                "age": 1,
+                "travel_time": 19,
+                "address": 17,
+                "alcohol": 10,
+                "g_edu": 5,
+                "g_job": 3,
+                "area": 32,
+                "month": 22
+            },
+            "p09": {
+                "absences": 54,
+                "failures": 6,
+                "age": 5,
+                "study_time": 7,
+                "internet": 16,
+                "address": 7,
+                "g_edu": 3,
+                "g_job": 5,
+                "alcohol": 4,
+                "travel_time": 12,
+                "area": 27,
+                "temp": 6,
+                "month": 2,
+                "day": 1,
+                "ffmc": 1,
+                "dmc": 1,
+                "wind": 10,
+                "rain": 6,
+                "dc": 1
+            },
+            "p08": {
+                "area": 44,
+                "temp": 9,
+                "wind": 11,
+                "ffmc": 15,
+                "rain": 8,
+                "month": 36,
+                "rh": 5,
+                "dc": 5,
+                "dmc": 2,
+                "g_edu": 11,
+                "internet": 5,
+                "absences": 46,
+                "travel_time": 11,
+                "failures": 5,
+                "alcohol": 3,
+                "address": 9
+            },
+            "p07": {
+                "absences": 56,
+                "age": 23,
+                "travel_time": 7,
+                "g_edu": 3,
+                "failures": 6,
+                "internet": 2,
+                "alcohol": 10,
+                "study_time": 2,
+                "address": 15,
+                "g_job": 3,
+                "area": 66,
+                "rain": 11,
+                "month": 2,
+                "day": 3,
+                "temp": 17,
+                "ffmc": 3,
+                "dc": 3,
+                "rh": 10,
+                "wind": 1
+            },
+            "p05": {
+                "area": 23,
+                "month": 3,
+                "day": 2,
+                "wind": 3,
+                "rain": 5,
+                "rh": 2,
+                "ffmc": 8,
+                "address": 2,
+                "absences": 21,
+                "age": 3,
+                "failures": 1,
+                "internet": 4,
+                "g_edu": 6,
+                "g_job": 3,
+                "alcohol": 4
+            },
+            "p12": {
+                "internet": 4,
+                "absences": 14,
+                "age": 21,
+                "alcohol": 8,
+                "study_time": 8,
+                "failures": 5,
+                "travel_time": 7,
+                "temp": 11,
+                "area": 21,
+                "month": 4,
+                "wind": 8
+            }
+        }
+    }
+]

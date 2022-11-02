@@ -1,0 +1,3650 @@
+[
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:37:53",
+        "dataset": "Forest fires",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": "tick",
+            "encoding": {}
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:38:14",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": "tick",
+            "encoding": {}
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:41:43",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "tick",
+                "orient": "horizontal"
+            },
+            "encoding": {
+                "y": {
+                    "field": "absences",
+                    "type": "quantitative"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:41:56",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": "tick",
+            "encoding": {}
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:41:59",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "tick",
+                "orient": "vertical"
+            },
+            "encoding": {
+                "x": {
+                    "field": "absences",
+                    "type": "quantitative"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:43:06",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": "tick",
+            "encoding": {}
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:43:06",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "tick",
+                "orient": "vertical"
+            },
+            "encoding": {
+                "x": {
+                    "field": "travel_time",
+                    "type": "quantitative"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:43:13",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "circle",
+                "size": "30"
+            },
+            "encoding": {
+                "x": {
+                    "field": "travel_time",
+                    "type": "quantitative"
+                },
+                "y": {
+                    "field": "absences",
+                    "type": "quantitative"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:43:50",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "tick",
+                "orient": "horizontal"
+            },
+            "encoding": {
+                "y": {
+                    "field": "absences",
+                    "type": "quantitative"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:43:50",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "tick",
+                "orient": "horizontal"
+            },
+            "encoding": {
+                "y": {
+                    "field": "absences",
+                    "type": "quantitative"
+                },
+                "x": {
+                    "field": "age",
+                    "type": "ordinal"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:43:58",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "tick",
+                "orient": "horizontal"
+            },
+            "encoding": {
+                "y": {
+                    "field": "absences",
+                    "type": "quantitative"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:44:12",
+        "dataset": "Forest fires",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": "tick",
+            "encoding": {}
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:44:15",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": "tick",
+            "encoding": {}
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:44:23",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "tick",
+                "orient": "horizontal"
+            },
+            "encoding": {
+                "y": {
+                    "field": "absences",
+                    "type": "quantitative"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:44:25",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "tick",
+                "orient": "horizontal"
+            },
+            "encoding": {
+                "y": {
+                    "field": "absences",
+                    "type": "quantitative"
+                },
+                "x": {
+                    "field": "age",
+                    "type": "ordinal"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:45:16",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "tick",
+                "orient": "horizontal"
+            },
+            "encoding": {
+                "y": {
+                    "field": "absences",
+                    "type": "quantitative"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:45:20",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "circle",
+                "size": "30"
+            },
+            "encoding": {
+                "y": {
+                    "field": "absences",
+                    "type": "quantitative"
+                },
+                "x": {
+                    "field": "travel_time",
+                    "type": "quantitative"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:45:25",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "tick",
+                "orient": "horizontal"
+            },
+            "encoding": {
+                "y": {
+                    "field": "absences",
+                    "type": "quantitative"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:45:29",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "circle",
+                "size": "30"
+            },
+            "encoding": {
+                "y": {
+                    "field": "absences",
+                    "type": "quantitative"
+                },
+                "x": {
+                    "field": "study_time",
+                    "type": "quantitative"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:45:32",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "tick",
+                "orient": "horizontal"
+            },
+            "encoding": {
+                "y": {
+                    "field": "absences",
+                    "type": "quantitative"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:45:35",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "tick",
+                "orient": "horizontal"
+            },
+            "encoding": {
+                "y": {
+                    "field": "absences",
+                    "type": "quantitative"
+                },
+                "x": {
+                    "field": "failures",
+                    "type": "ordinal"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:45:46",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "tick",
+                "orient": "horizontal"
+            },
+            "encoding": {
+                "y": {
+                    "field": "absences",
+                    "type": "quantitative"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:45:55",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "tick",
+                "orient": "horizontal"
+            },
+            "encoding": {
+                "y": {
+                    "field": "absences",
+                    "type": "quantitative"
+                },
+                "x": {
+                    "field": "address",
+                    "type": "nominal"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:46:02",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "tick",
+                "orient": "horizontal"
+            },
+            "encoding": {
+                "y": {
+                    "field": "absences",
+                    "type": "quantitative"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:46:05",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "tick",
+                "orient": "horizontal"
+            },
+            "encoding": {
+                "y": {
+                    "field": "absences",
+                    "type": "quantitative"
+                },
+                "x": {
+                    "field": "internet",
+                    "type": "nominal"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:46:42",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "tick",
+                "orient": "horizontal"
+            },
+            "encoding": {
+                "y": {
+                    "field": "absences",
+                    "type": "quantitative"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:46:46",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "tick",
+                "orient": "horizontal"
+            },
+            "encoding": {
+                "y": {
+                    "field": "absences",
+                    "type": "quantitative"
+                },
+                "x": {
+                    "field": "g_edu",
+                    "type": "ordinal"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:47:23",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "tick",
+                "orient": "horizontal"
+            },
+            "encoding": {
+                "y": {
+                    "field": "absences",
+                    "type": "quantitative"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:47:26",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "tick",
+                "orient": "horizontal"
+            },
+            "encoding": {
+                "y": {
+                    "field": "absences",
+                    "type": "quantitative"
+                },
+                "x": {
+                    "field": "g_job",
+                    "type": "nominal"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:47:38",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "tick",
+                "orient": "horizontal"
+            },
+            "encoding": {
+                "y": {
+                    "field": "absences",
+                    "type": "quantitative"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:47:41",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "circle",
+                "size": "30"
+            },
+            "encoding": {
+                "y": {
+                    "field": "absences",
+                    "type": "quantitative"
+                },
+                "x": {
+                    "field": "alcohol",
+                    "type": "quantitative"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:48:02",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "tick",
+                "orient": "horizontal"
+            },
+            "encoding": {
+                "y": {
+                    "field": "absences",
+                    "type": "quantitative"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:48:11",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": "tick",
+            "encoding": {}
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:48:17",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "bar",
+                "orient": "vertical"
+            },
+            "encoding": {
+                "x": {
+                    "field": "age",
+                    "type": "ordinal"
+                },
+                "y": {
+                    "field": "age",
+                    "aggregate": "count"
+                }
+            },
+            "config": {
+                "axis": {
+                    "grid": "True",
+                    "tickBand": "extent"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:48:18",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": "tick",
+            "encoding": {},
+            "config": {
+                "axis": {
+                    "grid": "True",
+                    "tickBand": "extent"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:48:21",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "tick",
+                "orient": "vertical"
+            },
+            "encoding": {
+                "x": {
+                    "field": "absences",
+                    "type": "quantitative"
+                }
+            },
+            "config": {
+                "axis": {
+                    "grid": "True",
+                    "tickBand": "extent"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:48:25",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": "tick",
+            "encoding": {},
+            "config": {
+                "axis": {
+                    "grid": "True",
+                    "tickBand": "extent"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:48:29",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "tick",
+                "orient": "horizontal"
+            },
+            "encoding": {
+                "y": {
+                    "field": "absences",
+                    "type": "quantitative"
+                }
+            },
+            "config": {
+                "axis": {
+                    "grid": "True",
+                    "tickBand": "extent"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:48:31",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": "tick",
+            "encoding": {},
+            "config": {
+                "axis": {
+                    "grid": "True",
+                    "tickBand": "extent"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:48:35",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "tick",
+                "orient": "vertical"
+            },
+            "encoding": {
+                "x": {
+                    "field": "alcohol",
+                    "type": "quantitative"
+                }
+            },
+            "config": {
+                "axis": {
+                    "grid": "True",
+                    "tickBand": "extent"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:48:37",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": "tick",
+            "encoding": {},
+            "config": {
+                "axis": {
+                    "grid": "True",
+                    "tickBand": "extent"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:48:53",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "tick",
+                "orient": "vertical"
+            },
+            "encoding": {
+                "x": {
+                    "field": "absences",
+                    "type": "quantitative"
+                }
+            },
+            "config": {
+                "axis": {
+                    "grid": "True",
+                    "tickBand": "extent"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:48:55",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": "tick",
+            "encoding": {},
+            "config": {
+                "axis": {
+                    "grid": "True",
+                    "tickBand": "extent"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:48:57",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "bar",
+                "orient": "vertical"
+            },
+            "encoding": {
+                "x": {
+                    "field": "age",
+                    "type": "ordinal"
+                },
+                "y": {
+                    "field": "age",
+                    "aggregate": "count"
+                }
+            },
+            "config": {
+                "axis": {
+                    "grid": "True",
+                    "tickBand": "extent"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:49:09",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": "tick",
+            "encoding": {},
+            "config": {
+                "axis": {
+                    "grid": "True",
+                    "tickBand": "extent"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:49:21",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "tick",
+                "orient": "vertical"
+            },
+            "encoding": {
+                "x": {
+                    "field": "study_time",
+                    "type": "quantitative"
+                }
+            },
+            "config": {
+                "axis": {
+                    "grid": "True",
+                    "tickBand": "extent"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:49:51",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": "tick",
+            "encoding": {},
+            "config": {
+                "axis": {
+                    "grid": "True",
+                    "tickBand": "extent"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:50:24",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "tick",
+                "orient": "horizontal"
+            },
+            "encoding": {
+                "y": {
+                    "field": "absences",
+                    "type": "quantitative"
+                }
+            },
+            "config": {
+                "axis": {
+                    "grid": "True",
+                    "tickBand": "extent"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:50:27",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "tick",
+                "orient": "horizontal"
+            },
+            "encoding": {
+                "y": {
+                    "field": "absences",
+                    "type": "quantitative"
+                },
+                "x": {
+                    "field": "failures",
+                    "type": "ordinal"
+                }
+            },
+            "config": {
+                "axis": {
+                    "grid": "True",
+                    "tickBand": "extent"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:50:29",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "tick",
+                "orient": "horizontal"
+            },
+            "encoding": {
+                "y": {
+                    "field": "absences",
+                    "type": "quantitative"
+                }
+            },
+            "config": {
+                "axis": {
+                    "grid": "True",
+                    "tickBand": "extent"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:50:34",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "tick",
+                "orient": "horizontal"
+            },
+            "encoding": {
+                "y": {
+                    "field": "absences",
+                    "type": "quantitative"
+                },
+                "x": {
+                    "field": "age",
+                    "type": "ordinal"
+                }
+            },
+            "config": {
+                "axis": {
+                    "grid": "True",
+                    "tickBand": "extent"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:50:37",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "tick",
+                "orient": "horizontal"
+            },
+            "encoding": {
+                "y": {
+                    "field": "absences",
+                    "type": "quantitative"
+                },
+                "x": {
+                    "field": "age",
+                    "type": "ordinal"
+                },
+                "row": {
+                    "field": "address"
+                }
+            },
+            "config": {
+                "axis": {
+                    "grid": "True",
+                    "tickBand": "extent"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:52:11",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "tick",
+                "orient": "horizontal"
+            },
+            "encoding": {
+                "y": {
+                    "field": "absences",
+                    "type": "quantitative"
+                },
+                "x": {
+                    "field": "age",
+                    "type": "ordinal"
+                }
+            },
+            "config": {
+                "axis": {
+                    "grid": "True",
+                    "tickBand": "extent"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:52:13",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "bar",
+                "orient": "vertical"
+            },
+            "encoding": {
+                "x": {
+                    "field": "age",
+                    "type": "ordinal"
+                },
+                "y": {
+                    "field": "age",
+                    "aggregate": "count"
+                }
+            },
+            "config": {
+                "axis": {
+                    "grid": "True",
+                    "tickBand": "extent"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:52:16",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": "tick",
+            "encoding": {},
+            "config": {
+                "axis": {
+                    "grid": "True",
+                    "tickBand": "extent"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:52:33",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "tick",
+                "orient": "horizontal"
+            },
+            "encoding": {
+                "y": {
+                    "field": "absences",
+                    "type": "quantitative"
+                }
+            },
+            "config": {
+                "axis": {
+                    "grid": "True",
+                    "tickBand": "extent"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:52:39",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "circle",
+                "size": "30"
+            },
+            "encoding": {
+                "y": {
+                    "field": "absences",
+                    "type": "quantitative"
+                },
+                "x": {
+                    "field": "travel_time",
+                    "type": "quantitative"
+                }
+            },
+            "config": {
+                "axis": {
+                    "grid": "True",
+                    "tickBand": "extent"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:52:49",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "circle",
+                "size": "30"
+            },
+            "encoding": {
+                "y": {
+                    "field": "absences",
+                    "type": "quantitative"
+                },
+                "x": {
+                    "field": "travel_time",
+                    "type": "quantitative"
+                },
+                "row": {
+                    "field": "address"
+                }
+            },
+            "config": {
+                "axis": {
+                    "grid": "True",
+                    "tickBand": "extent"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:53:00",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "circle",
+                "size": "30"
+            },
+            "encoding": {
+                "y": {
+                    "field": "absences",
+                    "type": "quantitative"
+                },
+                "x": {
+                    "field": "travel_time",
+                    "type": "quantitative"
+                },
+                "row": {
+                    "field": "address"
+                },
+                "column": {
+                    "field": "internet"
+                }
+            },
+            "config": {
+                "axis": {
+                    "grid": "True",
+                    "tickBand": "extent"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:53:25",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "circle",
+                "size": "30"
+            },
+            "encoding": {
+                "y": {
+                    "field": "absences",
+                    "type": "quantitative"
+                },
+                "x": {
+                    "field": "travel_time",
+                    "type": "quantitative"
+                },
+                "row": {
+                    "field": "address"
+                }
+            },
+            "config": {
+                "axis": {
+                    "grid": "True",
+                    "tickBand": "extent"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:53:28",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "circle",
+                "size": "30"
+            },
+            "encoding": {
+                "y": {
+                    "field": "absences",
+                    "type": "quantitative"
+                },
+                "x": {
+                    "field": "travel_time",
+                    "type": "quantitative"
+                },
+                "row": {
+                    "field": "address"
+                },
+                "column": {
+                    "field": "study_time"
+                }
+            },
+            "config": {
+                "axis": {
+                    "grid": "True",
+                    "tickBand": "extent"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:53:36",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "circle",
+                "size": "30"
+            },
+            "encoding": {
+                "y": {
+                    "field": "absences",
+                    "type": "quantitative"
+                },
+                "x": {
+                    "field": "travel_time",
+                    "type": "quantitative"
+                },
+                "row": {
+                    "field": "address"
+                }
+            },
+            "config": {
+                "axis": {
+                    "grid": "True",
+                    "tickBand": "extent"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:53:47",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "tick",
+                "orient": "vertical"
+            },
+            "encoding": {
+                "x": {
+                    "field": "travel_time",
+                    "type": "quantitative"
+                },
+                "row": {
+                    "field": "address"
+                }
+            },
+            "config": {
+                "axis": {
+                    "grid": "True",
+                    "tickBand": "extent"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:53:50",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "circle",
+                "size": "30"
+            },
+            "encoding": {
+                "x": {
+                    "field": "travel_time",
+                    "type": "quantitative"
+                },
+                "row": {
+                    "field": "address"
+                },
+                "y": {
+                    "field": "study_time",
+                    "type": "quantitative"
+                }
+            },
+            "config": {
+                "axis": {
+                    "grid": "True",
+                    "tickBand": "extent"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:53:55",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "tick",
+                "orient": "vertical"
+            },
+            "encoding": {
+                "x": {
+                    "field": "travel_time",
+                    "type": "quantitative"
+                },
+                "row": {
+                    "field": "address"
+                }
+            },
+            "config": {
+                "axis": {
+                    "grid": "True",
+                    "tickBand": "extent"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:53:59",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "tick",
+                "orient": "vertical"
+            },
+            "encoding": {
+                "x": {
+                    "field": "travel_time",
+                    "type": "quantitative"
+                }
+            },
+            "config": {
+                "axis": {
+                    "grid": "True",
+                    "tickBand": "extent"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:54:01",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "circle",
+                "size": "30"
+            },
+            "encoding": {
+                "x": {
+                    "field": "travel_time",
+                    "type": "quantitative"
+                },
+                "y": {
+                    "field": "study_time",
+                    "type": "quantitative"
+                }
+            },
+            "config": {
+                "axis": {
+                    "grid": "True",
+                    "tickBand": "extent"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:54:32",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "tick",
+                "orient": "vertical"
+            },
+            "encoding": {
+                "x": {
+                    "field": "travel_time",
+                    "type": "quantitative"
+                }
+            },
+            "config": {
+                "axis": {
+                    "grid": "True",
+                    "tickBand": "extent"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:54:32",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": "tick",
+            "encoding": {},
+            "config": {
+                "axis": {
+                    "grid": "True",
+                    "tickBand": "extent"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:54:35",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "tick",
+                "orient": "vertical"
+            },
+            "encoding": {
+                "x": {
+                    "field": "study_time",
+                    "type": "quantitative"
+                }
+            },
+            "config": {
+                "axis": {
+                    "grid": "True",
+                    "tickBand": "extent"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:54:38",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "circle",
+                "size": "30"
+            },
+            "encoding": {
+                "x": {
+                    "field": "study_time",
+                    "type": "quantitative"
+                },
+                "y": {
+                    "field": "absences",
+                    "type": "quantitative"
+                }
+            },
+            "config": {
+                "axis": {
+                    "grid": "True",
+                    "tickBand": "extent"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:54:45",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "circle",
+                "size": "30"
+            },
+            "encoding": {
+                "x": {
+                    "field": "study_time",
+                    "type": "quantitative"
+                },
+                "y": {
+                    "field": "absences",
+                    "type": "quantitative"
+                },
+                "row": {
+                    "field": "g_edu"
+                }
+            },
+            "config": {
+                "axis": {
+                    "grid": "True",
+                    "tickBand": "extent"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:54:52",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "circle",
+                "size": "30"
+            },
+            "encoding": {
+                "x": {
+                    "field": "study_time",
+                    "type": "quantitative"
+                },
+                "y": {
+                    "field": "absences",
+                    "type": "quantitative"
+                }
+            },
+            "config": {
+                "axis": {
+                    "grid": "True",
+                    "tickBand": "extent"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:54:57",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "circle",
+                "size": "30"
+            },
+            "encoding": {
+                "x": {
+                    "field": "study_time",
+                    "type": "quantitative"
+                },
+                "y": {
+                    "field": "absences",
+                    "type": "quantitative"
+                },
+                "row": {
+                    "field": "address"
+                }
+            },
+            "config": {
+                "axis": {
+                    "grid": "True",
+                    "tickBand": "extent"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:55:01",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "circle",
+                "size": "30"
+            },
+            "encoding": {
+                "x": {
+                    "field": "study_time",
+                    "type": "quantitative"
+                },
+                "y": {
+                    "field": "absences",
+                    "type": "quantitative"
+                }
+            },
+            "config": {
+                "axis": {
+                    "grid": "True",
+                    "tickBand": "extent"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:55:04",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "circle",
+                "size": "30"
+            },
+            "encoding": {
+                "x": {
+                    "field": "study_time",
+                    "type": "quantitative"
+                },
+                "y": {
+                    "field": "absences",
+                    "type": "quantitative"
+                },
+                "row": {
+                    "field": "g_edu"
+                }
+            },
+            "config": {
+                "axis": {
+                    "grid": "True",
+                    "tickBand": "extent"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:55:05",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "circle",
+                "size": "30"
+            },
+            "encoding": {
+                "x": {
+                    "field": "study_time",
+                    "type": "quantitative"
+                },
+                "y": {
+                    "field": "absences",
+                    "type": "quantitative"
+                }
+            },
+            "config": {
+                "axis": {
+                    "grid": "True",
+                    "tickBand": "extent"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:55:08",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "circle",
+                "size": "30"
+            },
+            "encoding": {
+                "x": {
+                    "field": "study_time",
+                    "type": "quantitative"
+                },
+                "y": {
+                    "field": "absences",
+                    "type": "quantitative"
+                },
+                "row": {
+                    "field": "g_job"
+                }
+            },
+            "config": {
+                "axis": {
+                    "grid": "True",
+                    "tickBand": "extent"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:55:14",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "circle",
+                "size": "30"
+            },
+            "encoding": {
+                "x": {
+                    "field": "study_time",
+                    "type": "quantitative"
+                },
+                "y": {
+                    "field": "absences",
+                    "type": "quantitative"
+                }
+            },
+            "config": {
+                "axis": {
+                    "grid": "True",
+                    "tickBand": "extent"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:55:15",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "circle",
+                "size": "30"
+            },
+            "encoding": {
+                "x": {
+                    "field": "study_time",
+                    "type": "quantitative"
+                },
+                "y": {
+                    "field": "absences",
+                    "type": "quantitative"
+                },
+                "row": {
+                    "field": "failures"
+                }
+            },
+            "config": {
+                "axis": {
+                    "grid": "True",
+                    "tickBand": "extent"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:55:24",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "circle",
+                "size": "30"
+            },
+            "encoding": {
+                "x": {
+                    "field": "study_time",
+                    "type": "quantitative"
+                },
+                "y": {
+                    "field": "absences",
+                    "type": "quantitative"
+                }
+            },
+            "config": {
+                "axis": {
+                    "grid": "True",
+                    "tickBand": "extent"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:55:26",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "circle",
+                "size": "30"
+            },
+            "encoding": {
+                "x": {
+                    "field": "study_time",
+                    "type": "quantitative"
+                },
+                "y": {
+                    "field": "absences",
+                    "type": "quantitative"
+                },
+                "row": {
+                    "field": "alcohol"
+                }
+            },
+            "config": {
+                "axis": {
+                    "grid": "True",
+                    "tickBand": "extent"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:55:29",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "circle",
+                "size": "30"
+            },
+            "encoding": {
+                "x": {
+                    "field": "study_time",
+                    "type": "quantitative"
+                },
+                "y": {
+                    "field": "absences",
+                    "type": "quantitative"
+                }
+            },
+            "config": {
+                "axis": {
+                    "grid": "True",
+                    "tickBand": "extent"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:55:33",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "tick",
+                "orient": "horizontal"
+            },
+            "encoding": {
+                "y": {
+                    "field": "absences",
+                    "type": "quantitative"
+                }
+            },
+            "config": {
+                "axis": {
+                    "grid": "True",
+                    "tickBand": "extent"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:55:37",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "circle",
+                "size": "30"
+            },
+            "encoding": {
+                "y": {
+                    "field": "absences",
+                    "type": "quantitative"
+                },
+                "x": {
+                    "field": "alcohol",
+                    "type": "quantitative"
+                }
+            },
+            "config": {
+                "axis": {
+                    "grid": "True",
+                    "tickBand": "extent"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:57:37",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "tick",
+                "orient": "vertical"
+            },
+            "encoding": {
+                "x": {
+                    "field": "alcohol",
+                    "type": "quantitative"
+                }
+            },
+            "config": {
+                "axis": {
+                    "grid": "True",
+                    "tickBand": "extent"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:57:39",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": "tick",
+            "encoding": {},
+            "config": {
+                "axis": {
+                    "grid": "True",
+                    "tickBand": "extent"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:57:46",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": "tick",
+            "encoding": {}
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:57:48",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "bar",
+                "orient": "vertical"
+            },
+            "encoding": {
+                "x": {
+                    "field": "internet",
+                    "type": "nominal"
+                },
+                "y": {
+                    "field": "internet",
+                    "aggregate": "count"
+                }
+            },
+            "config": {
+                "axis": {
+                    "grid": "True",
+                    "tickBand": "extent"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:58:04",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": "tick",
+            "encoding": {},
+            "config": {
+                "axis": {
+                    "grid": "True",
+                    "tickBand": "extent"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:58:04",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": "tick",
+            "encoding": {},
+            "config": {
+                "axis": {
+                    "grid": "True",
+                    "tickBand": "extent"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:58:15",
+        "dataset": "Forest fires",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": "tick",
+            "encoding": {}
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:58:18",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": "tick",
+            "encoding": {}
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:58:23",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "bar",
+                "orient": "vertical"
+            },
+            "encoding": {
+                "x": {
+                    "field": "internet",
+                    "type": "nominal"
+                },
+                "y": {
+                    "field": "internet",
+                    "aggregate": "count"
+                }
+            },
+            "config": {
+                "axis": {
+                    "grid": "True",
+                    "tickBand": "extent"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:58:31",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "bar",
+                "orient": "vertical"
+            },
+            "encoding": {
+                "x": {
+                    "field": "internet",
+                    "type": "nominal"
+                },
+                "y": {
+                    "field": "internet",
+                    "aggregate": "count"
+                },
+                "row": {
+                    "field": "absences"
+                }
+            },
+            "config": {
+                "axis": {
+                    "grid": "True",
+                    "tickBand": "extent"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:58:33",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "bar",
+                "orient": "vertical"
+            },
+            "encoding": {
+                "x": {
+                    "field": "internet",
+                    "type": "nominal"
+                },
+                "y": {
+                    "field": "internet",
+                    "aggregate": "count"
+                }
+            },
+            "config": {
+                "axis": {
+                    "grid": "True",
+                    "tickBand": "extent"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 17:59:46",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "tick",
+                "orient": "horizontal"
+            },
+            "encoding": {
+                "x": {
+                    "field": "internet",
+                    "type": "nominal"
+                },
+                "y": {
+                    "field": "absences",
+                    "type": "quantitative"
+                }
+            },
+            "config": {
+                "axis": {
+                    "grid": "True",
+                    "tickBand": "extent"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 18:00:03",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "tick",
+                "orient": "horizontal"
+            },
+            "encoding": {
+                "x": {
+                    "field": "internet",
+                    "type": "nominal"
+                },
+                "y": {
+                    "field": "absences",
+                    "type": "quantitative"
+                },
+                "column": {
+                    "field": "address"
+                }
+            },
+            "config": {
+                "axis": {
+                    "grid": "True",
+                    "tickBand": "extent"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 18:00:12",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "tick",
+                "orient": "horizontal"
+            },
+            "encoding": {
+                "x": {
+                    "field": "internet",
+                    "type": "nominal"
+                },
+                "y": {
+                    "field": "absences",
+                    "type": "quantitative"
+                }
+            },
+            "config": {
+                "axis": {
+                    "grid": "True",
+                    "tickBand": "extent"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 18:00:15",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "tick",
+                "orient": "horizontal"
+            },
+            "encoding": {
+                "x": {
+                    "field": "internet",
+                    "type": "nominal"
+                },
+                "y": {
+                    "field": "absences",
+                    "type": "quantitative"
+                },
+                "column": {
+                    "field": "g_edu"
+                }
+            },
+            "config": {
+                "axis": {
+                    "grid": "True",
+                    "tickBand": "extent"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 18:00:21",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "tick",
+                "orient": "horizontal"
+            },
+            "encoding": {
+                "x": {
+                    "field": "internet",
+                    "type": "nominal"
+                },
+                "y": {
+                    "field": "absences",
+                    "type": "quantitative"
+                }
+            },
+            "config": {
+                "axis": {
+                    "grid": "True",
+                    "tickBand": "extent"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 18:00:24",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "tick",
+                "orient": "horizontal"
+            },
+            "encoding": {
+                "x": {
+                    "field": "internet",
+                    "type": "nominal"
+                },
+                "y": {
+                    "field": "absences",
+                    "type": "quantitative"
+                },
+                "column": {
+                    "field": "g_job"
+                }
+            },
+            "config": {
+                "axis": {
+                    "grid": "True",
+                    "tickBand": "extent"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 18:00:36",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "tick",
+                "orient": "horizontal"
+            },
+            "encoding": {
+                "x": {
+                    "field": "internet",
+                    "type": "nominal"
+                },
+                "y": {
+                    "field": "absences",
+                    "type": "quantitative"
+                }
+            },
+            "config": {
+                "axis": {
+                    "grid": "True",
+                    "tickBand": "extent"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 18:00:39",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "tick",
+                "orient": "horizontal"
+            },
+            "encoding": {
+                "x": {
+                    "field": "internet",
+                    "type": "nominal"
+                },
+                "y": {
+                    "field": "absences",
+                    "type": "quantitative"
+                },
+                "column": {
+                    "field": "alcohol"
+                }
+            },
+            "config": {
+                "axis": {
+                    "grid": "True",
+                    "tickBand": "extent"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 18:00:44",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "tick",
+                "orient": "horizontal"
+            },
+            "encoding": {
+                "x": {
+                    "field": "internet",
+                    "type": "nominal"
+                },
+                "y": {
+                    "field": "absences",
+                    "type": "quantitative"
+                }
+            },
+            "config": {
+                "axis": {
+                    "grid": "True",
+                    "tickBand": "extent"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 18:00:51",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "tick",
+                "orient": "horizontal"
+            },
+            "encoding": {
+                "y": {
+                    "field": "absences",
+                    "type": "quantitative"
+                }
+            },
+            "config": {
+                "axis": {
+                    "grid": "True",
+                    "tickBand": "extent"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 18:00:53",
+        "dataset": "Students",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "tick",
+                "orient": "horizontal"
+            },
+            "encoding": {
+                "y": {
+                    "field": "absences",
+                    "type": "quantitative"
+                },
+                "x": {
+                    "field": "failures",
+                    "type": "ordinal"
+                }
+            },
+            "config": {
+                "axis": {
+                    "grid": "True",
+                    "tickBand": "extent"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 18:11:25",
+        "dataset": "Forest fires",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": "tick",
+            "encoding": {}
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 18:11:33",
+        "dataset": "Forest fires",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": "tick",
+            "encoding": {}
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 18:14:52",
+        "dataset": "Forest fires",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "tick",
+                "orient": "horizontal"
+            },
+            "encoding": {
+                "y": {
+                    "field": "area",
+                    "type": "quantitative"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 18:15:21",
+        "dataset": "Forest fires",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "circle",
+                "size": "30"
+            },
+            "encoding": {
+                "y": {
+                    "field": "area",
+                    "type": "quantitative"
+                },
+                "x": {
+                    "field": "rh",
+                    "type": "quantitative"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 18:15:37",
+        "dataset": "Forest fires",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "tick",
+                "orient": "horizontal"
+            },
+            "encoding": {
+                "y": {
+                    "field": "area",
+                    "type": "quantitative"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 18:15:51",
+        "dataset": "Forest fires",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "circle",
+                "size": "30"
+            },
+            "encoding": {
+                "y": {
+                    "field": "area",
+                    "type": "quantitative"
+                },
+                "x": {
+                    "field": "dmc",
+                    "type": "quantitative"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 18:15:55",
+        "dataset": "Forest fires",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "tick",
+                "orient": "horizontal"
+            },
+            "encoding": {
+                "y": {
+                    "field": "area",
+                    "type": "quantitative"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 18:15:57",
+        "dataset": "Forest fires",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "circle",
+                "size": "30"
+            },
+            "encoding": {
+                "y": {
+                    "field": "area",
+                    "type": "quantitative"
+                },
+                "x": {
+                    "field": "ffmc",
+                    "type": "quantitative"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 18:16:07",
+        "dataset": "Forest fires",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "tick",
+                "orient": "horizontal"
+            },
+            "encoding": {
+                "y": {
+                    "field": "area",
+                    "type": "quantitative"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 18:16:13",
+        "dataset": "Forest fires",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "circle",
+                "size": "30"
+            },
+            "encoding": {
+                "y": {
+                    "field": "area",
+                    "type": "quantitative"
+                },
+                "x": {
+                    "field": "dc",
+                    "type": "quantitative"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 18:16:18",
+        "dataset": "Forest fires",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "tick",
+                "orient": "horizontal"
+            },
+            "encoding": {
+                "y": {
+                    "field": "area",
+                    "type": "quantitative"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 18:16:36",
+        "dataset": "Forest fires",
+        "filters": false,
+        "transforms": false,
+        "models": true,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "tick",
+                "orient": "horizontal"
+            },
+            "encoding": {
+                "y": {
+                    "field": "area",
+                    "type": "quantitative"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 18:17:43",
+        "dataset": "Forest fires",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "tick",
+                "orient": "horizontal"
+            },
+            "encoding": {
+                "y": {
+                    "field": "area",
+                    "type": "quantitative"
+                },
+                "x": {
+                    "field": "month",
+                    "type": "nominal"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 18:18:19",
+        "dataset": "Forest fires",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "tick",
+                "orient": "horizontal"
+            },
+            "encoding": {
+                "y": {
+                    "field": "area",
+                    "type": "quantitative"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 18:18:52",
+        "dataset": "Forest fires",
+        "filters": false,
+        "transforms": false,
+        "models": true,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "tick",
+                "orient": "horizontal"
+            },
+            "encoding": {
+                "y": {
+                    "field": "area",
+                    "type": "quantitative"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 18:19:13",
+        "dataset": "Forest fires",
+        "filters": false,
+        "transforms": false,
+        "models": true,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "circle",
+                "size": "30"
+            },
+            "encoding": {
+                "y": {
+                    "field": "area",
+                    "type": "quantitative"
+                },
+                "x": {
+                    "field": "temp",
+                    "type": "quantitative"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 18:19:52",
+        "dataset": "Forest fires",
+        "filters": false,
+        "transforms": false,
+        "models": true,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "circle",
+                "size": "30"
+            },
+            "encoding": {
+                "y": {
+                    "field": "area",
+                    "type": "quantitative"
+                },
+                "x": {
+                    "field": "temp",
+                    "type": "quantitative"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 18:20:24",
+        "dataset": "Forest fires",
+        "filters": false,
+        "transforms": false,
+        "models": true,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "circle",
+                "size": "30"
+            },
+            "encoding": {
+                "y": {
+                    "field": "area",
+                    "type": "quantitative"
+                },
+                "x": {
+                    "field": "temp",
+                    "type": "quantitative"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 18:21:50",
+        "dataset": "Forest fires",
+        "filters": false,
+        "transforms": false,
+        "models": true,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "circle",
+                "size": "30"
+            },
+            "encoding": {
+                "y": {
+                    "field": "area",
+                    "type": "quantitative"
+                },
+                "x": {
+                    "field": "temp",
+                    "type": "quantitative"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 18:24:50",
+        "dataset": "Forest fires",
+        "filters": false,
+        "transforms": true,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "circle",
+                "size": "30"
+            },
+            "encoding": {
+                "y": {
+                    "field": "area",
+                    "type": "quantitative"
+                },
+                "x": {
+                    "field": "temp",
+                    "type": "quantitative"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 18:29:33",
+        "dataset": "Forest fires",
+        "filters": false,
+        "transforms": true,
+        "models": true,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": {
+                "type": "circle",
+                "size": "30"
+            },
+            "encoding": {
+                "y": {
+                    "field": "area",
+                    "type": "quantitative"
+                },
+                "x": {
+                    "field": "temp",
+                    "type": "quantitative"
+                }
+            }
+        }
+    },
+    {
+        "user_id": "p06",
+        "time": "2022-08-17 18:30:06",
+        "dataset": "Forest fires",
+        "filters": false,
+        "transforms": false,
+        "models": false,
+        "vis": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": {
+                "name": "table"
+            },
+            "mark": "tick",
+            "encoding": {}
+        }
+    }
+]

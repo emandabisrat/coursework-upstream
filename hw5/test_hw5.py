@@ -111,7 +111,7 @@ def test_find_region_locations(tst_dict):
     Checks find_region_locations for a given image, location, and radius
     """
     img_filename = tst_dict["image_filename"]
-    loc = tst_dict["loc"]
+    loc = tuple(tst_dict["loc"])
     radius = tst_dict["radius"]
     # json does not support tuples.  Convert index pairs into tuples
     expected = [tuple(t) for t in tst_dict["expected"]]
@@ -132,8 +132,9 @@ def test_find_region_locations(tst_dict):
     # We expect a result of the right type
     # Check that actual is a list
     helpers.check_type(actual, expected, rmsg)
+
     # Check that the values in the list are tuples of length 2
-    for t in expected:
+    for t in actual:
         assert isinstance(t, tuple) and len(t) == 2, \
             rmsg
 
