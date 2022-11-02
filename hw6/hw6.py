@@ -25,10 +25,20 @@ def count_user_events(filename):
     f = open(filename)
     events = json.load(f)
 
+    for e in events:
+        events.append(e['user_id'])
+    events = list(set(events))
+
     d = {}
     for i in events:
         u = "user_id"
         d[u[i]] = d.get([u[i]],0) + 1
+    
+    #count = 0
+    #user_identification = ""
+    #for id, cnt in sorted(d.items()):
+        
+
 
     return d
 
