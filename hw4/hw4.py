@@ -38,12 +38,13 @@ def prefix_distance(u, v):
     sum = len(u) + len(v)
     large= max(len(u), len(v))
     for i in range(large):
-        if i < (len(u) and len(v)):
+        if i < (len(u) and i < len(v)):
             if u[i] == v[i]:
                 sum = sum - 2
             elif u[i] != v[i]:
                 break
-    return sum    
+    total = sum
+    return total    
 
 
 
@@ -63,8 +64,12 @@ def suffix_distance(u, v):
 
     Output: suffix distance of u and v (int)
     """
+    u = u[::-1]
+    v = v[::-1]
+    suffix = prefix_distance(u,v)
+    return suffix
 
-    overall = max(len(u), len(v)) 
+    '''overall = max(len(u), len(v)) 
     dist = len(u) + len(v)
     for i in range(overall):
         if i < (len(v) and len(u)):
@@ -72,13 +77,40 @@ def suffix_distance(u, v):
                 dist = dist -2
             elif u[-1] != v[-i]:
                 break
-    return dist
+    return dist'''
 
     
 # Exercise 3
 def total_badness(text, width):
+    by_line = text.split('\n')
+    curr_bad = 0
+    total_bad = 0
+    for i in range(len(by_line) - 1): # skips last line 
+        one_word = False
+        line = by_line[i]
+        curr_bad = 0
+        total_bad += curr_bad**3
 
-    pass
+        # Check if current line is a single word longer than width
+        if (len(line.split(' ')) == 1) & (len(line) > width): 
+            curr_bad = len(line) - width
+            total_bad += curr_bad**3
+            break # go to next line
+            
+        for i in range(len(line) - 1, 0, -1): # go through line backwards
+            curr_char = line[i]
+            next_char = line[i - 1]
+            if (curr_char == ' ') & (next_char != ' '):
+                curr_bad += 1 
+                total_bad += curr_bad**3
+                break ## go to next line bc we've hit a word 
+
+            if (curr_char == ' ') & (next_char == ' '):
+                curr_bad += 1
+        print('current:', curr_bad)
+        
+        return total_bad
+        pass
 
 # Exercise 4
 def split_lines(text, width):
@@ -94,17 +126,18 @@ def split_lines(text, width):
     Output: a list of lines that each have a maximum width of the width input value
 
     '''
+    
     lines = text.split('\n')
+    new_list = []
     for i in range(len(text)):
         line = lines[i]
         if len(line) > width:
             bad = len(line) - width
-            break
+            new_list.append(bad)
         else: 
             break
     
     x = line.split(' ')
-    
     return x 
 
 
