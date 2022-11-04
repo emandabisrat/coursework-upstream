@@ -32,13 +32,13 @@ def prefix_distance(u, v):
         u (str): first input string
         v (str): second input string
 
-    Output: prefix distance of u and v (int)
+    Output: 
+        The prefix distance of u and v (int)
     """
-    ### Replace the body of this function with your solution.
     sum = len(u) + len(v)
-    large= max(len(u), len(v))
-    for i in range(large):
-        if i < (len(u) and i < len(v)):
+    maximum = max(len(u), len(v))
+    for i in range(maximum):
+        if i < len(u) and i < len(v):
             if u[i] == v[i]:
                 sum = sum - 2
             elif u[i] != v[i]:
@@ -62,91 +62,88 @@ def suffix_distance(u, v):
         u (str): first input string
         v (str): second input string
 
-    Output: suffix distance of u and v (int)
+    Output: 
+        The suffix distance of u and v (int)
     """
     u = u[::-1]
     v = v[::-1]
     suffix = prefix_distance(u,v)
     return suffix
 
-    '''overall = max(len(u), len(v)) 
-    dist = len(u) + len(v)
-    for i in range(overall):
-        if i < (len(v) and len(u)):
-            if u[-1] == v[-1]:
-                dist = dist -2
-            elif u[-1] != v[-i]:
-                break
-    return dist'''
-
     
 # Exercise 3
 def total_badness(text, width):
-    by_line = text.split('\n')
-    curr_bad = 0
-    total_bad = 0
-    for i in range(len(by_line) - 1): # skips last line 
-        one_word = False
-        line = by_line[i]
-        curr_bad = 0
-        total_bad += curr_bad**3
+    '''
+    Inputs a text string and an integer width and returns the total
+    baddness of the text which is represented by a value of the sum 
+    of the cubes of how many blank spaces are at the end of each line. 
 
-        # Check if current line is a single word longer than width
-        if (len(line.split(' ')) == 1) & (len(line) > width): 
-            curr_bad = len(line) - width
-            total_bad += curr_bad**3
-            break # go to next line
-            
-        for i in range(len(line) - 1, 0, -1): # go through line backwards
-            curr_char = line[i]
-            next_char = line[i - 1]
-            if (curr_char == ' ') & (next_char != ' '):
-                curr_bad += 1 
-                total_bad += curr_bad**3
-                break ## go to next line bc we've hit a word 
+    Inputs:
+        text (str): first input 
+        width (int): an integer that varies upon the text
+    
+    Output:
+        The total badness of a text(amount blank spaces)
+    '''
 
-            if (curr_char == ' ') & (next_char == ' '):
-                curr_bad += 1
-        print('current:', curr_bad)
-        
-        return total_bad
-        pass
+    split = split_lines(text, width)
+    bad = 0
+    for i in split[0: len(split) - 1]:
+        bad += (abs(width - len(i))) ** 3
+    return bad
+
 
 # Exercise 4
 def split_lines(text, width):
    
     '''
-    Inputs the text of usage and the width that the lines within the text have to be. 
-    This will return a list of lines that have a length at most the given width.
+    Inputs the text of usage and the width that the lines within the text have
+    to be. This will return a list of lines that have a length at most the 
+    given width.
 
     Input:
         text (lst): first input list
         width (int): an integer that varies based upon the text
     
-    Output: a list of lines that each have a maximum width of the width input value
+    Output: 
+        a list of lines that each have a maximum width of the width input value
 
     '''
     
-    lines = text.split('\n')
+    lines = text.split(' ')
+    single_line = lines[0]
     new_list = []
-    for i in range(len(text)):
-        line = lines[i]
-        if len(line) > width:
-            bad = len(line) - width
-            new_list.append(bad)
+    for i in lines[1:]:
+        if len(single_line) + len(i) + 1 <= width:
+            single_line = single_line + ' ' + i
         else: 
-            break
+            new_list.append(single_line)
+            single_line = i
+    new_list.append(single_line)
+    return new_list
     
-    x = line.split(' ')
-    return x 
 
 
 # Exercise 5
 def arrange_lines(text, width, blanks_visible):
-    ### Replace the body of this function with your solution.
-    pass
+    various_l = split_lines(text, width)
+    final = ""
+    if not blanks_visible:
+        for i in various_l:
+            final += i + "\n"
+    elif blanks_visible:
+        for i in various_l:
+            under = i + ('_' * (width - len(i)) + "\n")
+            final += under
+    final = final.strip()
+    return final 
 
 # Exercise 6
 def optimal_width(text, min_width, max_width):
-    ### Replace the body of this function with your solution.
-    pass
+    bad = []
+    for i in range(min_width, max_width + 1):
+        bad.append(total_badness(text,i))
+    optimal = min(bad)
+    index = bad.index(optimal)
+    return index + min_width
+    
