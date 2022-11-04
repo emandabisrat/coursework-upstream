@@ -156,7 +156,19 @@ def arrange_lines(text, width, blanks_visible):
 # Exercise 6
 def optimal_width(text, min_width, max_width):
     '''
-    Inputs are the text, a minimum width, and a maximum width to 
+    Inputs are the text, a minimum width(optional), and a maximum 
+    width(optional) and will find the optimal line width for the text. 
+    If the minimum width and the maximum width aren't given, then the 
+    default values are (0,80). The optimal line in the minimum line width
+    that results in minumum badness.
+
+    Inputs:
+        text (str): first input string
+        min_width (int) : an integer that gives the minumum
+        max_wideth (int) : an integer that gives the maximum
+    
+    Outputs:
+        The minimum baddnes of the text.
     '''
     bad = []
     for i in range(min_width, max_width + 1):
