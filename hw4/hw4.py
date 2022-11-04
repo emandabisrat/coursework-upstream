@@ -125,7 +125,22 @@ def split_lines(text, width):
 
 
 # Exercise 5
+
+
 def arrange_lines(text, width, blanks_visible):
+    '''
+    Inputs the given text string, a width, and blanks_visible which is an 
+    optional flag. Then the function returns a single string of the given text
+    broken into lines that meet the width requirement.
+
+    Inputs:
+        text (str): a string of text
+        width (int): an integer that varies based upon the text
+        blanks_visible: an optional flag
+    
+    Output:
+        A single string of the text with equal width lines. 
+    '''
     various_l = split_lines(text, width)
     final = ""
     if not blanks_visible:
@@ -140,6 +155,9 @@ def arrange_lines(text, width, blanks_visible):
 
 # Exercise 6
 def optimal_width(text, min_width, max_width):
+    '''
+    Inputs are the text, a minimum width, and a maximum width to 
+    '''
     bad = []
     for i in range(min_width, max_width + 1):
         bad.append(total_badness(text,i))
