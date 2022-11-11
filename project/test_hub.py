@@ -49,13 +49,12 @@ def check_result(actual, expected, recreate_msg):
                     (["1.0.0","4.17.4","1.0.1","4.18.0","5.0.0","4.17.6"],"LibX",True),
                 ])
 def test_reg_lib(versions, name, expected):
-    recreate_base = gen_base(expected)
     lib_hub = hub.LibraryHub()
     no_errors = False
+    recreate_msg = gen_base(expected)
     try:
         for v in versions:
-            recreate_msg = (recreate_base +
-            f"lib_hub.register_new_library(\"{name}\", \"{v}\", False)")
+            recreate_msg += f"lib_hub.register_new_library(\"{name}\", \"{v}\", False)\n"
             lib = lib_hub.register_new_library(name, v, False)
             if lib is None and expected is not False:
                 helpers.check_not_none(lib, recreate_msg)
