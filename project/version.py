@@ -22,26 +22,19 @@ class Version:
         Inputs:
             version_str(str): The given semantic version number
         """
-        split_v = version_str.strip(".").split(".")
-        v_length = len(split_v)
-        assert v_length <= 3 and v_length >= 1
-        v_nums = [int(v) for v in split_v]
-        self.major = v_nums[0] 
-        self.minor = v_nums[1] if v_length >= 2 else -1
-        self.patch = v_nums[2] if v_length == 3 else -1
+        self.split_v = version_str.split('.')
+        if self.split_v[-1] == '': 
+            self.split_v.pop()
         
+        while len(self.split_v) < 3:  
+            self.split_v.append(-1)  
+        self.major = int(self.split_v[0])
+        self.minor = int(self.split_v[1])
+        self.patch = int(self.split_v[2])
         
        
        
-    
 
-    def compare_num(self,version1,version2):
-        if version1 < version2:
-            return -1
-        if version1 == version2:
-            return 0
-        if version1 > version2:
-            return 1
 
     def compare_version(self, other):
         """
@@ -59,17 +52,20 @@ class Version:
         """
     
         
-        assert isinstance(other, Version)
-        result = 0
-        comparisons = [
-            self.compare_num(self.major,other.major), 
-            self.compare_num(self.minor,other.minor),
-            self.compare_num(self.patch,other.patch)
-        ] 
-        for i in comparisons:
-            if i != result:
-                return i 
-        return result
+        assert isinstance(other, Version)  
+        if self.major < other.major:
+            return -1 
+        if self.major > other.major: 
+            return 1 
+        if self.minor < other.minor: 
+            return -1 
+        if self.minor > other.minor: 
+            return 1
+        if self.patch < other.patch: 
+            return -1 
+        if self.patch > other.patch: 
+            return 1 
+        return 0
 
 
     def meets_requirement(self, req):
@@ -90,7 +86,19 @@ class Version:
 
         Output(bool): If this Version satisfies the requirement
         """
-        assert isinstance(req,Version)
-        return self.compare_version(req) >= 0
-
+        assert isinstance(req, Version)
+        
+        if self.major == req.major: 
+            if req.minor == -1:
+                return True
+            if self.minor == req.minor: 
+                if req.patch == -1:
+                    return True 
+                if self.patch != req.patch: 
+                    return False 
+            if self.minor != req.minor: 
+                return False 
+            else: 
+                return True 
+        return False
 
