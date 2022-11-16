@@ -27,20 +27,13 @@ class Version:
         assert v_length <= 3 and v_length >= 1
         v_nums = [int(v) for v in split_v]
         self.major = v_nums[0] 
-        if v_length >= 2:
-            self.minor = v_nums[1]
-        elif v_length == 3:
-            self.patch = v_nums[2]
-        else:
-            v_length == '-1'
-            
-        #self.minor = v_nums[1] if v_length >= 2 else -1
-        #self.patch = v_nums[2] if v_length == 3 else -1
+        self.minor = v_nums[1] if v_length >= 2 else -1
+        self.patch = v_nums[2] if v_length == 3 else -1
         
         
        
         ### Add your attributes and initialize them
-        pass
+    
 
     def compare_num(self,version1,version2):
         if version1 < version2:
