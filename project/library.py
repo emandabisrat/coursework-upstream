@@ -33,9 +33,15 @@ class Library:
             version(str): The semantic version number  
             is_testing(bool): If the library is for testing only  
         """
-        ### TODO project 1
-        ### Add your attributes and initialize them
-        pass
+        self.name = name 
+        self.version = version
+        self.is_testing = is_testing
+        
+        x = self.version.split('.')
+
+        if len(x) < 3 or x[2] == '': 
+            raise LibraryException("Version not exact")
+        
 
   
     def compare_version(self, other):
@@ -52,7 +58,13 @@ class Library:
           1 if self is larger than other
         """
         assert isinstance(other, Library)
-        raise NotImplementedError("TODO project 1") ### TODO
+
+        self_version = Version(self.version)
+        other_version = Version(other.version)
+        
+        if self.name != other.name: 
+            raise LibraryException
+        return Version.compare_version(self_version, other_version)  
    
    
     def meets_version_req(self, version_needed):
@@ -65,4 +77,4 @@ class Library:
         Returns (bool): If the library meets the requirement
         """
         assert isinstance(version_needed, str)
-        raise NotImplementedError("TODO project 1") ### TODO
+        return Version(self.version).meets_requirement(Version(version_needed))
