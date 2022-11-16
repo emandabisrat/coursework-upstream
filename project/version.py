@@ -22,25 +22,33 @@ class Version:
         Inputs:
             version_str(str): The given semantic version number
         """
-        new_version = version_str.split('.')
-        print(new_version)
-        if len(new_version) == 3:
-            new_version[0] = self.major
-            new_version[1] = self.minor
-            new_version[3] = self.patch
-        elif len(new_version) == 2:
-            new_version[0] = self.major
-            new_version[1] = self.minor
-            self.patch = '-1'
-        elif len(new_version) == 1:
-            new_version[0] = self.major
-            self.minor = '-1'
-            self.patch = '-1'
+        split_v = version_str.strip(".").split(".")
+        v_length = len(split_v)
+        assert v_length <= 3 and v_length >= 1
+        v_nums = [int(v) for v in split_v]
+        self.major = v_nums[0] 
+        if v_length >= 2:
+            self.minor = v_nums[1]
+        elif v_length == 3:
+            self.patch = v_nums[2]
+        else:
+            v_length == '-1'
+            
+        #self.minor = v_nums[1] if v_length >= 2 else -1
+        #self.patch = v_nums[2] if v_length == 3 else -1
         
-        ### TODO project 1
+        
+       
         ### Add your attributes and initialize them
         pass
 
+    def compare_num(self,version1,version2):
+        if version1 < version2:
+            return -1
+        if version1 == version2:
+            return 0
+        if version1 > version2:
+            return 1
 
     def compare_version(self, other):
         """
@@ -56,8 +64,19 @@ class Version:
             0 if they have the same version number,  
             1 if  self is larger than other
         """
-        assert isinstance(other, Version)
     
+        
+        assert isinstance(other, Version)
+        result = 0
+        comparisons = [
+            self.compare_num(self.major,other.major), 
+            self.compare_num(self.minor,other.minor),
+            self.compare_num(self.patch,other.patch)
+        ] #compares all aspects of the version nums
+        for i in comparisons:
+            if i != result:
+                return i #returns the first difference otherwise resolves to 0
+        return result
 
 
     def meets_requirement(self, req):
@@ -78,4 +97,7 @@ class Version:
 
         Output(bool): If this Version satisfies the requirement
         """
-    
+        assert isinstance(req,Version)
+        return self.compare_version(req) >= 0 #if self version is greater than it meets the requirements
+
+
