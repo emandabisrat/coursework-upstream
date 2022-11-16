@@ -13,9 +13,9 @@ class LibraryHub:
         """
         Create a new LibraryHub instance.
         """
-        ### TODO project 1
-        ### Add your attributes and initialize them
-        pass
+        self.library_dict = {}
+        
+        
 
 
     def register_new_library(self,
@@ -36,8 +36,13 @@ class LibraryHub:
 
         Returns(Library): The newly created Library object
         """
-        raise NotImplementedError("TODO project 1") ### TODO
-
+        new_library = Library(name,version,is_testing)
+        if new_library.name in self.library_dict:
+            lib = self.library_dict[name]
+        else:
+            self.library_dict[name] = [new_library]
+        return new_library
+            
 
     def find_latest_version(self, name, include_testing = False):
         """
@@ -50,8 +55,15 @@ class LibraryHub:
 
         Returns (Library): The largest version for a library name
         """
-        raise NotImplementedError("TODO project 1") ### TODO
-
+        if name in self.library_dict:
+            if not include_testing:
+                non_testing = lib for lib in self.library_dict[name] if not lib.is_testing
+                if len(non_testing) > 0:
+                    return non_testing[-1]
+                else:
+                    raise LibraryException
+        else:
+            raise LibraryException
 
     def get_library(self, name, version_requirement):
         """
@@ -72,4 +84,4 @@ class LibraryHub:
         largest/highest one that is not testing should be returned.
         None is returned if no valid library can be found.
         """
-        raise NotImplementedError("TODO project 1") ### TODO
+    
