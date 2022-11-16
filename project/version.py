@@ -32,7 +32,7 @@ class Version:
         
         
        
-        ### Add your attributes and initialize them
+       
     
 
     def compare_num(self,version1,version2):
@@ -65,10 +65,10 @@ class Version:
             self.compare_num(self.major,other.major), 
             self.compare_num(self.minor,other.minor),
             self.compare_num(self.patch,other.patch)
-        ] #compares all aspects of the version nums
+        ] 
         for i in comparisons:
             if i != result:
-                return i #returns the first difference otherwise resolves to 0
+                return i 
         return result
 
 
@@ -91,6 +91,6 @@ class Version:
         Output(bool): If this Version satisfies the requirement
         """
         assert isinstance(req,Version)
-        return self.compare_version(req) >= 0 #if self version is greater than it meets the requirements
+        return self.compare_version(req) >= 0
 
 
