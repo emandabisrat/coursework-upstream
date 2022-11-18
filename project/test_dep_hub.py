@@ -144,7 +144,8 @@ def test_hub_add_dep(libs_args, deps_args, expected, fails):
     try:
         for dn, dv in deps_args:
             recreate += f"lib_hub.add_dependency('{lib_name}', '{lib_ver}', '{dn}', '{dv}')\n"
-            lib_hub.add_dependency(lib_name, lib_ver, dn, dv)
+            added = lib_hub.add_dependency(lib_name, lib_ver, dn, dv)
+            helpers.check_expected_none(added, recreate)
         recreate += f"lib_hub.get_library('{lib_name}', '{lib_ver}').get_dependencies()\n"
         check_result(set(lib.get_dependencies()), set(deps), recreate)
         recreate = f"\n\n\nThis test expected a LibraryException to be raised.\n{recreate}"
@@ -171,7 +172,8 @@ def test_hub_add_multiple_deps(libs_args, deps_args, expected, fails):
     recreate += f"deps = {deps_args}\n"
     recreate += f"lib_hub.add_dependencies('{lib_name}', '{lib_ver}', deps)\n"
     try:
-        lib_hub.add_dependencies(lib_name, lib_ver, deps_args)
+        added = lib_hub.add_dependencies(lib_name, lib_ver, deps_args)
+        helpers.check_expected_none(added, recreate)
         recreate += f"lib_hub.get_library('{lib_name}', '{lib_ver}').get_dependencies()\n"
         check_result(set(lib.get_dependencies()), set(deps), recreate)
         recreate = f"\n\n\nThis test expected a LibraryException to be raised.\n{recreate}"
@@ -310,7 +312,8 @@ def test_hub_update_deps(libs_args, init_deps, upd_args, expected, fails):
     recreate += (f"lib_hub.update_dependency('{lib_name}', '{lib_ver}', "
                  f"'{upd_name}', '{upd_ver}')\n\n")
     try:
-        lib_hub.update_dependency(lib_name, lib_ver, upd_name, upd_ver)
+        updated = lib_hub.update_dependency(lib_name, lib_ver, upd_name, upd_ver)
+        helpers.check_expected_none(updated, recreate)
         check_result(set(lib.get_dependencies()), set(deps_expected), recreate)
         recreate = f"\n\n\nThis test expected a LibraryException to be raised.\n{recreate}"
         assert not fails, recreate

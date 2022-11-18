@@ -70,12 +70,13 @@ def test_lib_basic_init(lib_args, deps_args, fails):
     deps = [library.Library(n,v,t) for (n,v,t) in deps_args]
     deps_str = [f"library.Library('{n}', '{v}', {t})" for (n,v,t) in deps_args]
     recreate += "deps = [" + ",\n        ".join(deps_str) + "]\n"
-    lib_str = (f"lib = library.Library('{lib_name}', '{lib_ver}', dependencies=deps)\n"
-               f"lib.get_dependencies()")
-    recreate += lib_str + "\n\n\n"
+    recreate += f"lib = library.Library('{lib_name}', '{lib_ver}', dependencies=deps)\n"
     try:
         lib = library.Library(lib_name, lib_ver, dependencies=deps)
-        check_result(set(lib.get_dependencies()), set(deps), recreate)
+        recreate += f"lib.get_dependencies()\n\n\n"
+        actual = lib.get_dependencies()
+        helpers.check_type(actual, deps, recreate)
+        check_result(set(actual), set(deps), recreate)
         recreate = f"\n\n\nThis test expected a LibraryException to be raised.\n{recreate}"
         assert not fails, recreate
     except library.LibraryException as e:
@@ -95,9 +96,12 @@ def test_lib_basic_add(lib_args, deps_args, fails):
     try:
         for i, (n,v,t) in enumerate(deps_args):
             recreate += f"lib.add_dependency(library.Library('{n}','{v}','{t}'))\n"
-            lib.add_dependency(deps[i])
+            added = lib.add_dependency(deps[i])
+            helpers.check_expected_none(added, recreate)
         recreate += f"lib.get_dependencies()\n\n\n"
-        check_result(set(lib.get_dependencies()), set(deps), recreate)
+        actual = lib.get_dependencies()
+        helpers.check_type(actual, deps, recreate)
+        check_result(set(actual), set(deps), recreate)
         recreate = f"\n\n\nThis test expected a LibraryException to be raised.\n{recreate}"
         assert not fails, recreate
     except library.LibraryException as e:
@@ -274,6 +278,8 @@ def test_lib_get_deps_depth(libs_args, deps_args, depth, expected):
             recreate += f"libs[{i}].add_dependency(libs[{d}])\n"
             libs[i].add_dependency(libs[d])
     recreate += f"libs[{0}].get_dependencies({depth})\n\n\n"
+    actual = libs[0].get_dependencies(depth)
+    helpers.check_type(actual, deps0, recreate)
     check_result(set(libs[0].get_dependencies(depth)), set(deps0), recreate)
 
 @pytest.mark.parametrize("lib_args, deps_args, upd_args, fails",
@@ -318,6 +324,7 @@ def test_lib_get_deps_depth(libs_args, deps_args, depth, expected):
 def test_lib_update_deps(lib_args, deps_args, upd_args, fails):
     recreate = "\n\nTo recreate this test in IPython, run the following:\n\n"
     deps = [library.Library(n,v) for (n,v) in deps_args]
+    updated = deps[:]
     deps_str = [f"library.Library('{n}', '{v}')" for (n,v) in deps_args]
     recreate += "deps = [" + ",\n        ".join(deps_str) + "]\n\n"
     lib_name, lib_ver = lib_args
@@ -330,8 +337,8 @@ def test_lib_update_deps(lib_args, deps_args, upd_args, fails):
     recreate += upd_str
     recreate += "lib.update_dependency(upd_dep)\n\n"
     try:
-        lib.update_dependency(upd_dep)
-        updated = deps[:]
+        actual = lib.update_dependency(upd_dep)
+        helpers.check_expected_none(actual, recreate)
         del updated[upd_idx]
         updated.append(upd_dep)
         check_result(set(lib.get_dependencies()), set(updated), recreate)
