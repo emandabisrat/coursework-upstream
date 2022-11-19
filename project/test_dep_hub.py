@@ -138,7 +138,7 @@ def test_hub_add_dep(libs_args, deps_args, expected, fails):
     lib_name, lib_ver, lib_test = libs_args[0]
     lib = libs[0]
 
-    libs_str = [f"lib_hub.register_new_library('{n}', '{v}', '{t}')" for (n,v,t) in libs_args]
+    libs_str = [f"lib_hub.register_new_library('{n}', '{v}', {t})" for (n,v,t) in libs_args]
     recreate += "\n".join(libs_str) + "\n\n"
     recreate += f"deps = {deps_args}\n"
     try:
@@ -167,7 +167,7 @@ def test_hub_add_multiple_deps(libs_args, deps_args, expected, fails):
     lib_name, lib_ver, lib_test = libs_args[0]
     lib = libs[0]
 
-    libs_str = [f"lib_hub.register_new_library('{n}', '{v}', '{t}')" for (n,v,t) in libs_args]
+    libs_str = [f"lib_hub.register_new_library('{n}', '{v}', {t})" for (n,v,t) in libs_args]
     recreate += "\n".join(libs_str) + "\n\n"
     recreate += f"deps = {deps_args}\n"
     recreate += f"lib_hub.add_dependencies('{lib_name}', '{lib_ver}', deps)\n"
@@ -194,7 +194,7 @@ def test_hub_deps_init(libs_args, deps_args, expected, fails):
     deps = [libs[i-1] for i in expected]
     lib_name, lib_ver, lib_test = libs_args[0]
 
-    libs_str = [f"lib_hub.register_new_library('{n}', '{v}', '{t}')" 
+    libs_str = [f"lib_hub.register_new_library('{n}', '{v}', {t})" 
                 for (n,v,t) in libs_args[1:]]
     recreate += "\n".join(libs_str) + "\n\n"
     recreate += f"deps = {deps_args}\n"
@@ -294,7 +294,7 @@ def test_hub_update_deps(libs_args, init_deps, upd_args, expected, fails):
 
     libs = [lib_hub.register_new_library(n,v,t) for (n,v,t) in libs_args]
     recreate += (f"libs = [" +
-                 f"\n        ".join([f"lib_hub.register_new_library('{n}', '{v}', '{t}')" 
+                 f"\n        ".join([f"lib_hub.register_new_library('{n}', '{v}', {t})" 
                                      for (n,v,t) in libs_args]) +
                  f"]\n")
     deps_start = [libs[i] for i in init_deps]

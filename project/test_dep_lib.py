@@ -95,7 +95,7 @@ def test_lib_basic_add(lib_args, deps_args, fails):
     deps = [library.Library(n,v,t) for (n,v,t) in deps_args]
     try:
         for i, (n,v,t) in enumerate(deps_args):
-            recreate += f"lib.add_dependency(library.Library('{n}','{v}','{t}'))\n"
+            recreate += f"lib.add_dependency(library.Library('{n}', '{v}', {t}))\n"
             added = lib.add_dependency(deps[i])
             helpers.check_expected_none(added, recreate)
         recreate += f"lib.get_dependencies()\n\n\n"
