@@ -73,10 +73,10 @@ def test_lib_basic_init(lib_args, deps_args, fails):
     recreate += f"lib = library.Library('{lib_name}', '{lib_ver}', dependencies=deps)\n"
     try:
         lib = library.Library(lib_name, lib_ver, dependencies=deps)
-        recreate += f"lib.get_dependencies()\n\n\n"
-        actual = lib.get_dependencies()
-        helpers.check_type(actual, deps, recreate)
         if not fails:
+            recreate += f"lib.get_dependencies()\n\n\n"
+            actual = lib.get_dependencies()
+            helpers.check_type(actual, deps, recreate)
             check_result(set(actual), set(deps), recreate)
         else:
             recreate = f"\n\n\nThis test expected a LibraryException to be raised.\n{recreate}"
@@ -100,10 +100,10 @@ def test_lib_basic_add(lib_args, deps_args, fails):
             recreate += f"lib.add_dependency(library.Library('{n}', '{v}', {t}))\n"
             added = lib.add_dependency(deps[i])
             helpers.check_expected_none(added, recreate)
-        recreate += f"lib.get_dependencies()\n\n\n"
-        actual = lib.get_dependencies()
-        helpers.check_type(actual, deps, recreate)
         if not fails:
+            recreate += f"lib.get_dependencies()\n\n\n"
+            actual = lib.get_dependencies()
+            helpers.check_type(actual, deps, recreate)
             check_result(set(actual), set(deps), recreate)
         else:
             recreate = f"\n\n\nThis test expected a LibraryException to be raised.\n{recreate}"
@@ -342,10 +342,10 @@ def test_lib_update_deps(lib_args, deps_args, upd_args, fails):
     recreate += "lib.update_dependency(upd_dep)\n\n"
     try:
         actual = lib.update_dependency(upd_dep)
-        helpers.check_expected_none(actual, recreate)
-        del updated[upd_idx]
-        updated.append(upd_dep)
         if not fails:
+            helpers.check_expected_none(actual, recreate)
+            del updated[upd_idx]
+            updated.append(upd_dep)
             check_result(set(lib.get_dependencies()), set(updated), recreate)
         else:
             recreate = f"\n\n\nThis test expected a LibraryException to be raised.\n{recreate}"
