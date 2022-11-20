@@ -76,9 +76,11 @@ def test_lib_basic_init(lib_args, deps_args, fails):
         recreate += f"lib.get_dependencies()\n\n\n"
         actual = lib.get_dependencies()
         helpers.check_type(actual, deps, recreate)
-        check_result(set(actual), set(deps), recreate)
-        recreate = f"\n\n\nThis test expected a LibraryException to be raised.\n{recreate}"
-        assert not fails, recreate
+        if not fails:
+            check_result(set(actual), set(deps), recreate)
+        else:
+            recreate = f"\n\n\nThis test expected a LibraryException to be raised.\n{recreate}"
+            assert not fails, recreate
     except library.LibraryException as e:
         recreate = (f"\n\n\nThis test should not have failed due to\n"
                     f"    LibraryException: {e}\n{recreate}")
@@ -101,9 +103,11 @@ def test_lib_basic_add(lib_args, deps_args, fails):
         recreate += f"lib.get_dependencies()\n\n\n"
         actual = lib.get_dependencies()
         helpers.check_type(actual, deps, recreate)
-        check_result(set(actual), set(deps), recreate)
-        recreate = f"\n\n\nThis test expected a LibraryException to be raised.\n{recreate}"
-        assert not fails, recreate
+        if not fails:
+            check_result(set(actual), set(deps), recreate)
+        else:
+            recreate = f"\n\n\nThis test expected a LibraryException to be raised.\n{recreate}"
+            assert not fails, recreate
     except library.LibraryException as e:
         recreate = (f"\n\n\nThis test should not have failed due to\n"
                     f"    LibraryException: {e}\n{recreate}")
@@ -341,9 +345,11 @@ def test_lib_update_deps(lib_args, deps_args, upd_args, fails):
         helpers.check_expected_none(actual, recreate)
         del updated[upd_idx]
         updated.append(upd_dep)
-        check_result(set(lib.get_dependencies()), set(updated), recreate)
-        recreate = f"\n\n\nThis test expected a LibraryException to be raised.\n{recreate}"
-        assert not fails, recreate
+        if not fails:
+            check_result(set(lib.get_dependencies()), set(updated), recreate)
+        else:
+            recreate = f"\n\n\nThis test expected a LibraryException to be raised.\n{recreate}"
+            assert not fails, recreate
     except library.LibraryException as e:
         check_result(set(lib.get_dependencies()), set(deps), recreate)
         recreate = (f"\n\n\nThis test should not have failed due to\n"
