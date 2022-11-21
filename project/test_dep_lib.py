@@ -346,6 +346,7 @@ def test_lib_update_deps(lib_args, deps_args, upd_args, fails):
             helpers.check_expected_none(actual, recreate)
             del updated[upd_idx]
             updated.append(upd_dep)
+            recreate += "lib.get_dependencies()\n\n"
             check_result(set(lib.get_dependencies()), set(updated), recreate)
         else:
             recreate = f"\n\n\nThis test expected a LibraryException to be raised.\n{recreate}"

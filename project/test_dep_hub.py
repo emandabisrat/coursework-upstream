@@ -202,11 +202,12 @@ def test_hub_deps_init(libs_args, deps_args, expected, fails):
                 for (n,v,t) in libs_args[1:]]
     recreate += "\n".join(libs_str) + "\n\n"
     recreate += f"deps = {deps_args}\n"
-    recreate += f"lib_hub.register_new_library('{lib_name}', '{lib_ver}', dependencies = deps)\n"
+    recreate += f"lib = lib_hub.register_new_library('{lib_name}', '{lib_ver}', dependencies = deps)\n"
     try:
         lib = lib_hub.register_new_library(lib_name, lib_ver,
                                            dependencies=deps_args)
         if not fails:
+            recreate += f"lib.get_dependencies()\n"
             check_result(set(lib.get_dependencies()), set(deps), recreate)
         else:
             recreate = f"\n\n\nThis test expected a LibraryException to be raised.\n{recreate}"
@@ -321,11 +322,13 @@ def test_hub_update_deps(libs_args, init_deps, upd_args, expected, fails):
         updated = lib_hub.update_dependency(lib_name, lib_ver, upd_name, upd_ver)
         if not fails:
             helpers.check_expected_none(updated, recreate)
+            recreate += f"libs[0].get_dependencies()\n"
             check_result(set(lib.get_dependencies()), set(deps_expected), recreate)
         else:
             recreate = f"\n\n\nThis test expected a LibraryException to be raised.\n{recreate}"
             assert not fails, recreate
     except library.LibraryException as e:
+        recreate += f"libs[0].get_dependencies()\n"
         check_result(set(lib.get_dependencies()), set(deps_start), recreate)
         recreate = (f"\n\n\nThis test should not have failed due to\n"
                     f"    LibraryException: {e}\n{recreate}")
