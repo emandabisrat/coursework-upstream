@@ -90,3 +90,15 @@ def check_list_unmodified(param_name, before, after, recreate_msg=None):
         msg += "\n" + recreate_msg
 
     assert before == after, msg
+
+def check_expected_none(actual, recreate_msg=None):
+    """
+    Generate an error if the actual value is not none
+    """
+
+    msg = "The function returned a value other than the expected value: None."
+    if recreate_msg is not None:
+        msg += "\n" + recreate_msg
+
+    assert actual is None, msg
+
